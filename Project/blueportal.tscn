@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=3 uid="uid://xajj2bqsrrfl"]
+
+[ext_resource type="Shader" path="res://PortalOuter.gdshader" id="1_fqu2g"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_q5yw8"]
+noise_type = 3
+frequency = 0.2013
+fractal_type = 2
+fractal_octaves = 1
+fractal_lacunarity = 5.205
+domain_warp_enabled = true
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_hklix"]
+noise = SubResource("FastNoiseLite_q5yw8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7bar1"]
+shader = ExtResource("1_fqu2g")
+shader_parameter/radius = 0.81
+shader_parameter/thickness = 0.22
+shader_parameter/color = Color(0, 0.509804, 0.988235, 1)
+shader_parameter/brightness = 0.92
+shader_parameter/angular_speed = -0.6
+shader_parameter/radial_speed = -0.2
+shader_parameter/alpha = 0.6
+shader_parameter/noise = SubResource("NoiseTexture2D_hklix")
+
+[sub_resource type="QuadMesh" id="QuadMesh_g2bip"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_21jpl"]
+shader = ExtResource("1_fqu2g")
+shader_parameter/radius = 0.57
+shader_parameter/thickness = 0.44
+shader_parameter/color = Color(0, 0.278431, 0.988235, 1)
+shader_parameter/brightness = 1.44
+shader_parameter/angular_speed = -1.01
+shader_parameter/radial_speed = 0.0899999
+shader_parameter/alpha = 0.6
+shader_parameter/noise = SubResource("NoiseTexture2D_hklix")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jehrs"]
+shader = ExtResource("1_fqu2g")
+shader_parameter/radius = 0.25
+shader_parameter/thickness = 0.46
+shader_parameter/color = Color(0, 0.509804, 0.988235, 1)
+shader_parameter/brightness = 0.92
+shader_parameter/angular_speed = -1.01
+shader_parameter/radial_speed = 0.0899999
+shader_parameter/alpha = 0.6
+shader_parameter/noise = SubResource("NoiseTexture2D_hklix")
+
+[node name="Portal" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+material = SubResource("ShaderMaterial_7bar1")
+scale = Vector2(100, 100)
+mesh = SubResource("QuadMesh_g2bip")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+material = SubResource("ShaderMaterial_21jpl")
+scale = Vector2(100, 100)
+mesh = SubResource("QuadMesh_g2bip")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+material = SubResource("ShaderMaterial_jehrs")
+scale = Vector2(100, 100)
+mesh = SubResource("QuadMesh_g2bip")

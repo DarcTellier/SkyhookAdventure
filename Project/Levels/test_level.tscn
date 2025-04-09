@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=4 uid="uid://7k3lhsnyvtjr"]
+
+[ext_resource type="PackedScene" uid="uid://crj0lw3pyxu1h" path="res://Player/player.tscn" id="1_4k50d"]
+[ext_resource type="Texture2D" uid="uid://ck281pk8dgdvi" path="res://Assets/Art/Block1.png" id="2_3158n"]
+[ext_resource type="PackedScene" uid="uid://bssllwhv8q114" path="res://SetPieces/OrbitingPlatform/orbiting_platform.tscn" id="2_i4ak4"]
+[ext_resource type="PackedScene" uid="uid://lbkaoij5gdtj" path="res://SetPieces/OrbitingPlatform/platform.tscn" id="3_3158n"]
+[ext_resource type="PackedScene" uid="uid://cba8ut47w6fbk" path="res://Collectables/coin.tscn" id="3_ub4j8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ub4j8"]
+texture = ExtResource("2_3158n")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_pvdih"]
+scenes/1/scene = ExtResource("3_ub4j8")
+
+[sub_resource type="TileSet" id="TileSet_ub4j8"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ub4j8")
+sources/2 = SubResource("TileSetScenesCollectionSource_pvdih")
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_4k50d")]
+position = Vector2(256, 227)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position_smoothing_enabled = true
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAKABQAAAAAAAAAAAALABQAAAAAAAAAAAAMABQAAAAAAAAAAAANABQAAAAAAAAAAAAOABQAAAAAAAAAAAAPABQAAAAAAAAAAAAQABQAAAAAAAAAAAARABQAAAAAAAAAAAASABQAAAAAAAAAAAATABQAAAAAAAAAAAAUABQAAAAAAAAAAAAVABQAAAAAAAAAAAArABQAAAAAAAAAAAArABUAAAAAAAAAAAAsABQAAAAAAAAAAAAsABUAAAAAAAAAAAAtABQAAAAAAAAAAAAtABUAAAAAAAAAAAAuABQAAAAAAAAAAAAuABUAAAAAAAAAAAAvABQAAAAAAAAAAAAvABUAAAAAAAAAAAAwABQAAAAAAAAAAAAwABUAAAAAAAAAAAAxABQAAAAAAAAAAAAxABUAAAAAAAAAAAAyABQAAAAAAAAAAAAyABUAAAAAAAAAAAAzABQAAAAAAAAAAAAzABUAAAAAAAAAAAA0ABQAAAAAAAAAAAA0ABUAAAAAAAAAAAA1ABQAAAAAAAAAAAA1ABUAAAAAAAAAAAA2ABQAAAAAAAAAAAA2ABUAAAAAAAAAAAA3ABQAAAAAAAAAAAA3ABUAAAAAAAAAAAA4ABQAAAAAAAAAAAA4ABUAAAAAAAAAAAA5ABQAAAAAAAAAAAA5ABUAAAAAAAAAAAA6ABQAAAAAAAAAAAA6ABUAAAAAAAAAAAA7ABQAAAAAAAAAAAA7ABUAAAAAAAAAAAA8ABQAAAAAAAAAAAA8ABUAAAAAAAAAAAA9ABQAAAAAAAAAAAA9ABUAAAAAAAAAAAAKABUAAAAAAAAAAAALABUAAAAAAAAAAAAMABUAAAAAAAAAAAANABUAAAAAAAAAAAAOABUAAAAAAAAAAAAPABUAAAAAAAAAAAAQABUAAAAAAAAAAAARABUAAAAAAAAAAAASABUAAAAAAAAAAAATABUAAAAAAAAAAAAUABUAAAAAAAAAAAAVABUAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_ub4j8")
+
+[node name="OrbitingPlatform" parent="." instance=ExtResource("2_i4ak4")]
+position = Vector2(528, 304)
+radius = Vector2(20, 10)
+rotation_duration = 2.0
+
+[node name="Platform" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(17.1073, -5.18027)
+
+[node name="Platform2" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(19.9299, 0.836778)
+
+[node name="Platform3" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(15.1399, 6.53421)
+
+[node name="Platform4" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(4.56702, 9.73579)
+
+[node name="Platform5" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(-7.75031, 9.21863)
+
+[node name="Platform6" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(-17.1073, 5.18027)
+
+[node name="Platform7" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(-19.9299, -0.836778)
+
+[node name="Platform8" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(-15.1399, -6.53421)
+
+[node name="Platform9" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(-4.56702, -9.73579)
+
+[node name="Platform10" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
+position = Vector2(7.75031, -9.21863)

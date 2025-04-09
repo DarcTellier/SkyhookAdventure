@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://davq01vjv8ebi"]
+
+[ext_resource type="Script" path="res://SetPieces/Elevator/elevator_platform.gd" id="1_2aw7h"]
+[ext_resource type="Texture2D" uid="uid://bcw08eqr5l11a" path="res://Assets/Art/Platform.png" id="2_go0b0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3yc8s"]
+size = Vector2(64, 16)
+
+[node name="ElevatorPlatform" type="Node2D"]
+script = ExtResource("1_2aw7h")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_3yc8s")
+
+[node name="Platform" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_go0b0")

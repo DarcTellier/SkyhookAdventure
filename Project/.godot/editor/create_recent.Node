@@ -1,0 +1,15 @@
+Camera2D
+TileMapLayer
+CollisionPolygon2D
+StaticBody2D
+CollisionShape2D
+MeshInstance2D
+TileMap
+Area2D
+AnimatableBody2D
+Label
+ColorRect
+Node2D
+CharacterBody2D
+Timer
+AudioStreamPlayer2D

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://crj0lw3pyxu1h"]
+
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_a2mvl"]
+[ext_resource type="Texture2D" uid="uid://b2fx23cihh3g7" path="res://Player/JUMPER.png" id="2_mun31"]
+[ext_resource type="AudioStream" uid="uid://qg13ioj71ekm" path="res://Assets/SoundFX/Jump70.wav" id="3_awb2x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufdn7"]
+size = Vector2(7, 25)
+
+[node name="Player" type="CharacterBody2D"]
+texture_filter = 1
+collision_layer = 9
+floor_stop_on_slope = false
+floor_max_angle = 0.532325
+script = ExtResource("1_a2mvl")
+SPEED = 200.0
+JUMP_VELOCITY = -300.0
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_mun31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 3.5)
+shape = SubResource("RectangleShape2D_ufdn7")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_awb2x")
+volume_db = -15.727
+panning_strength = 3.0
