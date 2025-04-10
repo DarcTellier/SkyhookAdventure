@@ -1,11 +1,11 @@
 [gd_scene load_steps=37 format=3 uid="uid://c7crajivajahj"]
 
-[ext_resource type="PackedScene" uid="uid://5bunr2xo7vta" path="res://camera_2d.tscn" id="1_pqlcn"]
+[ext_resource type="PackedScene" uid="uid://5bunr2xo7vta" path="res://Player/PlatformerCamera.tscn" id="1_pqlcn"]
 [ext_resource type="PackedScene" uid="uid://crj0lw3pyxu1h" path="res://Player/player.tscn" id="2_tam0d"]
 [ext_resource type="Texture2D" uid="uid://ck281pk8dgdvi" path="res://Assets/Art/Block1.png" id="3_r1nig"]
 [ext_resource type="Texture2D" uid="uid://dvuxblcycd7fn" path="res://Assets/Art/NegativeSpacePlacer.png" id="4_y51ua"]
 [ext_resource type="Texture2D" uid="uid://dx6l15vssx1ko" path="res://Assets/Art/NegativeSpacePlaceBlack.png" id="5_fec40"]
-[ext_resource type="PackedScene" uid="uid://bfvm7qt75js6o" path="res://gear.tscn" id="7_8ssap"]
+[ext_resource type="PackedScene" path="res://gear.tscn" id="7_8ssap"]
 [ext_resource type="Script" path="res://Scenes/World1/test.gd" id="7_c5eku"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_2pfap"]

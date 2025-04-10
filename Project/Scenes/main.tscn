@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://kbo3iwxuwrwy" path="res://SetPieces/DisapearingBlocks/disapearing_box_blue.tscn" id="6_x8y4r"]
 [ext_resource type="PackedScene" uid="uid://bssllwhv8q114" path="res://SetPieces/OrbitingPlatform/orbiting_platform.tscn" id="8_4puqb"]
 [ext_resource type="PackedScene" uid="uid://lbkaoij5gdtj" path="res://SetPieces/OrbitingPlatform/platform.tscn" id="9_kbqoc"]
-[ext_resource type="PackedScene" uid="uid://5bunr2xo7vta" path="res://camera_2d.tscn" id="12_7bdww"]
-[ext_resource type="PackedScene" uid="uid://ca28nckfjfwfo" path="res://event_trigger.tscn" id="14_rriys"]
+[ext_resource type="PackedScene" uid="uid://5bunr2xo7vta" path="res://Player/PlatformerCamera.tscn" id="12_7bdww"]
+[ext_resource type="PackedScene" path="res://event_trigger.tscn" id="14_rriys"]
 [ext_resource type="PackedScene" uid="uid://0akonjc8ebem" path="res://Assets/Interactables/interactables.tscn" id="15_ccmnr"]
 [ext_resource type="PackedScene" uid="uid://b755igrpchp1b" path="res://SetPieces/DirectionalLift/directional_lift.tscn" id="16_xc17k"]
 

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq4sm4bqr0xp1"]
+
+[ext_resource type="Script" path="res://SetPieces/OrbitingPlatform/elevator_2.gd" id="1_xv40y"]
+[ext_resource type="PackedScene" uid="uid://lbkaoij5gdtj" path="res://SetPieces/OrbitingPlatform/platform.tscn" id="2_35amk"]
+
+[node name="Elevator2" type="Node2D"]
+position = Vector2(264, 528)
+script = ExtResource("1_xv40y")
+lift_speed = 2.0
+
+[node name="end" type="Marker2D" parent="."]
+position = Vector2(0, -472)
+
+[node name="Platform" parent="." instance=ExtResource("2_35amk")]
+
+[node name="Platform2" parent="." instance=ExtResource("2_35amk")]
+
+[node name="Platform3" parent="." instance=ExtResource("2_35amk")]
+
+[node name="Platform4" parent="." instance=ExtResource("2_35amk")]
