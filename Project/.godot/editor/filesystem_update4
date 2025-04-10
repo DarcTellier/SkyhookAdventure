@@ -31,3 +31,5 @@ res://SetPieces/Platform/platform_two_way_collision.tscn
 res://SetPieces/Platform/platform_two_way_collision.gd
 res://SetPieces/Special/white_block.gd
 res://SetPieces/Special/white_block.tscn
+res://SetPieces/Special/super_elevator.gd
+res://SetPieces/Special/super_elevator.tscn

@@ -20,7 +20,10 @@
 				"66e0ef7f-92a5-489d-88bb-6be0fa84849f",
 				"cd554dd2-2a65-41f6-b049-db0057521721",
 				"f935b255-4a43-4469-9951-dce19314360c",
-				"e5f43404-8be4-4eb2-8333-1de4f3af6171"
+				"e5f43404-8be4-4eb2-8333-1de4f3af6171",
+				"fa132509-ad1c-44de-b0c4-14b7e01615b6",
+				"0cd01409-b013-4713-bfe8-c550d4b201a2",
+				"457ea2b5-ca9c-4e54-b4c9-7f6ffefdd21f"
 			]
 		},
 		{
@@ -38,7 +41,8 @@
 			"title": "Done",
 			"tasks": [
 				"76621173-a1e6-43f2-bd5a-e1e4b5c94c11",
-				"fa04b33b-6a17-4525-9672-856f6c9ae083"
+				"fa04b33b-6a17-4525-9672-856f6c9ae083",
+				"fe149f7b-ef2d-44fd-857c-654df8566062"
 			]
 		}
 	],
@@ -151,6 +155,34 @@
 		{
 			"uuid": "fa04b33b-6a17-4525-9672-856f6c9ae083",
 			"title": "White block ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "fa132509-ad1c-44de-b0c4-14b7e01615b6",
+			"title": "ladders",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "0cd01409-b013-4713-bfe8-c550d4b201a2",
+			"title": "Falling platform + rope ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "457ea2b5-ca9c-4e54-b4c9-7f6ffefdd21f",
+			"title": "Minecart ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "fe149f7b-ef2d-44fd-857c-654df8566062",
+			"title": "elevator controllable",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []

@@ -98,5 +98,5 @@ func cayote_time():
 func _on_white_block_timer_timeout() -> void:
 	position.y+=1
 	z_index = -1
-	$AudioStreamPlayer2D.play()
+	
 	
