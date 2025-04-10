@@ -22,3 +22,12 @@ res://SetPieces/OrbitingPlatform/elevator_platform.gd
 res://elevator_platform.tscn
 res://SetPieces/OrbitingPlatform/elevator_2.tscn
 res://SetPieces/OrbitingPlatform/elevator_2.gd
+res://SetPieces/Elevator/elevator_2.tscn
+res://SetPieces/Platform/platform.tscn
+res://SetPieces/OrbitingPlatform/orbiting_platform.tscn
+res://SetPieces/DisapearingBlocks/disapearing_box.tscn
+res://SetPieces/Platform/platform_one_way_collision.tscn
+res://SetPieces/Platform/platform_two_way_collision.tscn
+res://SetPieces/Platform/platform_two_way_collision.gd
+res://SetPieces/Special/white_block.gd
+res://SetPieces/Special/white_block.tscn

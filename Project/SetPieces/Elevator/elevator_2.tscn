@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dq4sm4bqr0xp1"]
 
-[ext_resource type="Script" path="res://SetPieces/OrbitingPlatform/elevator_2.gd" id="1_xv40y"]
-[ext_resource type="PackedScene" uid="uid://lbkaoij5gdtj" path="res://SetPieces/OrbitingPlatform/platform.tscn" id="2_35amk"]
+[ext_resource type="Script" path="res://SetPieces/Elevator/elevator_2.gd" id="1_xv40y"]
+[ext_resource type="PackedScene" uid="uid://lbkaoij5gdtj" path="res://SetPieces/Platform/platform.tscn" id="2_35amk"]
 
 [node name="Elevator2" type="Node2D"]
 position = Vector2(264, 528)
@@ -14,7 +14,10 @@ position = Vector2(0, -472)
 [node name="Platform" parent="." instance=ExtResource("2_35amk")]
 
 [node name="Platform2" parent="." instance=ExtResource("2_35amk")]
+position = Vector2(0, -118)
 
 [node name="Platform3" parent="." instance=ExtResource("2_35amk")]
+position = Vector2(0, -236)
 
 [node name="Platform4" parent="." instance=ExtResource("2_35amk")]
+position = Vector2(0, -354)

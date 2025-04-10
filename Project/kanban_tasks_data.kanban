@@ -1,0 +1,172 @@
+{
+	"categories": [
+		{
+			"uuid": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"title": "Task",
+			"color": "de384a"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "3c73aebb-6b77-4faf-9bfa-e4bfe5d4e4d2",
+			"title": "Todo",
+			"tasks": [
+				"205fe505-ca94-42ae-b789-8a61f5a547f2",
+				"6a1bd327-546c-4da8-8242-274ae329f7f4",
+				"a849b3b1-5076-408f-82ee-d310be981166",
+				"9c758cf7-0d3a-4ba6-95cb-be2cfd8e86ed",
+				"db99e767-30b3-46ce-b2df-00e2f303e5e2",
+				"c4151983-efe3-4271-9fa4-5cb5cc1a2fa1",
+				"66e0ef7f-92a5-489d-88bb-6be0fa84849f",
+				"cd554dd2-2a65-41f6-b049-db0057521721",
+				"f935b255-4a43-4469-9951-dce19314360c",
+				"e5f43404-8be4-4eb2-8333-1de4f3af6171"
+			]
+		},
+		{
+			"uuid": "d86f7127-6204-4d78-9636-e131877fdc38",
+			"title": "Doing",
+			"tasks": [
+				"cb3d2ae1-e647-47ef-90c2-7acbe68ddfac",
+				"af9a6a3d-a16d-49af-aa1a-f8f3d5580a9f",
+				"ae415a72-6a78-4776-bd4a-bf94266f67b7",
+				"450be229-48b7-4d76-b542-87af2bd6b0c3"
+			]
+		},
+		{
+			"uuid": "ac5c2b6b-2961-422f-a1a9-82991b6fcfc6",
+			"title": "Done",
+			"tasks": [
+				"76621173-a1e6-43f2-bd5a-e1e4b5c94c11",
+				"fa04b33b-6a17-4525-9672-856f6c9ae083"
+			]
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "cb3d2ae1-e647-47ef-90c2-7acbe68ddfac",
+			"title": "TextBox ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "af9a6a3d-a16d-49af-aa1a-f8f3d5580a9f",
+			"title": "interaction",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "ae415a72-6a78-4776-bd4a-bf94266f67b7",
+			"title": "keybinding",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "450be229-48b7-4d76-b542-87af2bd6b0c3",
+			"title": "moveable platform",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "205fe505-ca94-42ae-b789-8a61f5a547f2",
+			"title": "moveable platform draws line path",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "6a1bd327-546c-4da8-8242-274ae329f7f4",
+			"title": "mario 3 donut platform",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "a849b3b1-5076-408f-82ee-d310be981166",
+			"title": "mario3 type inventory",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "9c758cf7-0d3a-4ba6-95cb-be2cfd8e86ed",
+			"title": "treasure chest",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "db99e767-30b3-46ce-b2df-00e2f303e5e2",
+			"title": "shop",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "c4151983-efe3-4271-9fa4-5cb5cc1a2fa1",
+			"title": "wallet size",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "66e0ef7f-92a5-489d-88bb-6be0fa84849f",
+			"title": "backpack upgrades",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "76621173-a1e6-43f2-bd5a-e1e4b5c94c11",
+			"title": "one way platforms",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "cd554dd2-2a65-41f6-b049-db0057521721",
+			"title": "mario 3 doors /cave entrance",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "f935b255-4a43-4469-9951-dce19314360c",
+			"title": "swimming",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "e5f43404-8be4-4eb2-8333-1de4f3af6171",
+			"title": "grappling hook",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "fa04b33b-6a17-4525-9672-856f6c9ae083",
+			"title": "White block ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"3c73aebb-6b77-4faf-9bfa-e4bfe5d4e4d2"
+			],
+			[
+				"d86f7127-6204-4d78-9636-e131877fdc38"
+			],
+			[
+				"ac5c2b6b-2961-422f-a1a9-82991b6fcfc6"
+			]
+		]
+	}
+}

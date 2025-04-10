@@ -9,7 +9,10 @@ extends CharacterBody2D
 var cayote_count= 0
 
 @export var jump = false
-
+@export var duck_jump_height = 2
+var two_way_platform = false
+var white_platform = false
+var white_block_time_start = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -24,6 +27,8 @@ func _physics_process(delta):
 func player_input():
 	jump_input()
 	movement_input()
+	white_block()
+	
 
 
 func movement_input():
@@ -43,11 +48,33 @@ func movement_input():
 
 
 func jump_input():
+	#2wayPlatforms
+	if Input.is_action_pressed("down")&&Input.is_action_just_pressed("jump")&& jump == true && two_way_platform == true:
+		position.y+=1
+		$AudioStreamPlayer2D.play()
+		return
+	#small jump
+	if Input.is_action_pressed("down")&&Input.is_action_just_pressed("jump")&& jump == true:
+		velocity.y = JUMP_VELOCITY / duck_jump_height
+		$AudioStreamPlayer2D.play()
+		return	
+	
+	
 	# Handle Jump.
-	if Input.is_action_just_pressed("jump")&& jump == true :   #and is_on_floor()
+	if Input.is_action_just_pressed("jump")&& jump == true :  
+		z_index = 0 # white block 
 		velocity.y = JUMP_VELOCITY
 		$AudioStreamPlayer2D.play()
 
+func white_block():
+	if Input.is_action_pressed("down") && white_platform == true:
+		if white_block_time_start == false:
+			$White_Block_Timer.start()
+			white_block_time_start = true
+	else:
+		$White_Block_Timer.stop()
+		white_block_time_start = false 
+		
 
 func update_gravity(delta):
 	# Add the gravity.
@@ -66,3 +93,10 @@ func cayote_time():
 			jump = false
 			pass
 		
+
+
+func _on_white_block_timer_timeout() -> void:
+	position.y+=1
+	z_index = -1
+	$AudioStreamPlayer2D.play()
+	

@@ -26,3 +26,9 @@ shape = SubResource("RectangleShape2D_ufdn7")
 stream = ExtResource("3_awb2x")
 volume_db = -15.727
 panning_strength = 3.0
+
+[node name="White_Block_Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="White_Block_Timer" to="." method="_on_white_block_timer_timeout"]
