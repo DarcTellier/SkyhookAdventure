@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://crj0lw3pyxu1h"]
+[gd_scene load_steps=6 format=3 uid="uid://crj0lw3pyxu1h"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_a2mvl"]
 [ext_resource type="Texture2D" uid="uid://b2fx23cihh3g7" path="res://Player/JUMPER.png" id="2_mun31"]
 [ext_resource type="AudioStream" uid="uid://qg13ioj71ekm" path="res://Assets/SoundFX/Jump70.wav" id="3_awb2x"]
+[ext_resource type="PackedScene" uid="uid://f5narbiaxcmv" path="res://UI/input_settings/input_settings.tscn" id="4_gwnis"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufdn7"]
 size = Vector2(7, 25)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 texture_filter = 1
-collision_layer = 9
+collision_layer = 11
 floor_stop_on_slope = false
 floor_max_angle = 0.532325
 script = ExtResource("1_a2mvl")
@@ -30,5 +31,9 @@ panning_strength = 3.0
 [node name="White_Block_Timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="InputSettings" parent="CanvasLayer" instance=ExtResource("4_gwnis")]
 
 [connection signal="timeout" from="White_Block_Timer" to="." method="_on_white_block_timer_timeout"]
