@@ -1,14 +1,14 @@
 extends StaticBody2D
 
 @export var pipe_name = ""
+var pipe_direction = "UP"
 @export var destination = ""
-var pipe_direction = "DOWN"
 
 var player_reff
 var player_reff_transion
 var enter_pipe = false
 var inpipetransit = false
-var down_press = false
+var up_press = false
 
 
 func _ready() -> void:
@@ -29,15 +29,15 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 	
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("down"):
-		down_press = true
-		print(down_press)
+	if event.is_action_pressed("up"):
+		up_press = true
+		print(up_press)
 
 func _process(delta: float) -> void:
 	
 	if player_reff != null:
 		if player_reff.name == "Player":
-			if player_reff.down_press == true && enter_pipe == false:
+			if player_reff.up_press == true && enter_pipe == false:
 				enter_pipe = true
 				print(pipe_name)
 				in_the_pipe()
@@ -52,14 +52,17 @@ func in_the_pipe():
 
 	player_reff.global_position.x = global_position.x
 	player_reff.z_index = -2
-	player_reff.get_node("AnimationPlayer").play("enter_the_down_pipe")
+	player_reff.get_node("AnimationPlayer").play("enter_the_up_pipe")
 	
 	$InThePipeTimer.start()
 	
 
 
 func _on_timer_timeout() -> void:
-	
+	if player_reff == null:
+		print("its a living")
+		player_reff= GPipeNetwork.emergency_player_reff
+		
 	player_reff.global_position = GPipeNetwork.pipe_directory[destination][0]
 	select_pipe_exit_animation()
 	
@@ -72,12 +75,13 @@ func select_pipe_exit_animation():
 		"UP":player_reff.get_node("AnimationPlayer").play_backwards("exit_the_up_pipe")
 		"LEFT":player_reff.get_node("AnimationPlayer").play_backwards("exit_the_left_pipe")
 		"RIGHT":player_reff.get_node("AnimationPlayer").play_backwards("exit_the_right_pipe")
-
+		
+	
 
 func _on_ou_the_pipe_timer_timeout() -> void:
 	player_reff_transion.in_pipe_transit = false
 	player_reff_transion.input_freeze = false
-	player_reff_transion.down_press = false
+	player_reff_transion.up_press = false
 	player_reff_transion = ""
 	
-	pass # Replace with function body.
+	

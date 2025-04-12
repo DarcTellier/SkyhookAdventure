@@ -14,3 +14,6 @@ res://SetPieces/Platform/elevatorPlatform.tscn
 res://SetPieces/Elevator/elevator_2.tscn
 res://Globals/GPipeNetwork.gd
 res://Player/Player.gd
+res://SetPieces/Platform/pipe_down.tscn
+res://SetPieces/Platform/pipe_up.tscn
+res://SetPieces/Platform/pipe_up.gd

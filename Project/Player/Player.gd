@@ -29,6 +29,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready() -> void:
 	PauseScreen.player_reff = self #pass refference to self to Pause screen for magic
+	GPipeNetwork.emergency_player_reff = self # fix issue with pipe not getting player refference on pipe body enter. 
 
 func _physics_process(delta):
 	update_gravity(delta)
