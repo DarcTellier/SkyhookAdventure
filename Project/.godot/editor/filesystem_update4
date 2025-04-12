@@ -1,11 +1,14 @@
-res://Player/player.tscn
+res://SetPieces/Platform/platform_one_way_collision.tscn
 res://Player/PipeTransShader.gdshader
+res://Player/player.tscn
 res://Levels/test_level.tscn
 res://UI/input_settings/input_settings.tscn
-res://UI/input_settings/input_button.tscn
-res://interactions/InteractionManager.tscn
 res://interactions/interaction area/interaction_area.tscn
 res://SetPieces/Special/npc_test.tscn
-res://SetPieces/Elevator/elevator_2.tscn
 res://Globals/Pause_Screen.tscn
 res://pipe.tscn
+res://SetPieces/Platform/platform_two_way_collision.tscn
+res://pipe.gd
+res://SetPieces/Elevator/elevator_2.gd
+res://SetPieces/Platform/elevatorPlatform.tscn
+res://SetPieces/Elevator/elevator_2.tscn

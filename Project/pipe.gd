@@ -4,10 +4,16 @@ var player_reff
 var enter_pipe = false
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	print(body.name)
+	
 	if body.name == "Player":
 		player_reff = body
 
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	
+	player_reff = null
+	enter_pipe = false
+	
 
 func _process(delta: float) -> void:
 	if player_reff != null:

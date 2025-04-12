@@ -37,7 +37,12 @@ func lift():
 		
 		platforms[i].position.y -= lift_speed
 		if platforms[i].position.y < $end.position.y:
+			
+			platforms[i].get_node("CollisionShape2D").disabled = true
 			platforms[i].position.y = 0
+			
+			
+			platforms[i].get_node("CollisionShape2D").disabled = false
 		if platforms[i].position.y >0:
 			platforms[i].position.y = $end.position.y
 	

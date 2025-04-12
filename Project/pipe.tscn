@@ -35,4 +35,7 @@ shape = SubResource("RectangleShape2D_1uqvy")
 [node name="Marker2D" type="Marker2D" parent="."]
 z_index = -1
 
+[node name="Destination" type="Marker2D" parent="."]
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

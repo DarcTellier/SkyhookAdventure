@@ -61,7 +61,7 @@ func movement_input():
 
 
 func jump_input():
-	
+
 	#2wayPlatforms
 	if Input.is_action_pressed("down")&&Input.is_action_just_pressed("jump")&& jump == true && two_way_platform == true:
 		position.y+=1
