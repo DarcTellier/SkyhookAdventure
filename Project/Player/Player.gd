@@ -14,6 +14,8 @@ var cayote_count= 0
 @export var up_press = false
 @export var down_press = false
 
+var in_pipe_transit = false
+
 
 
 #TODO move these 3 to it's own script / do state machine

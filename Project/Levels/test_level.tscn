@@ -89,29 +89,40 @@ position = Vector2(-976, 2672)
 position = Vector2(0, -2344)
 
 [node name="ElevatorPlatform" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -636)
 
 [node name="ElevatorPlatform2" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -831.333)
 
 [node name="ElevatorPlatform3" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -1026.67)
 
 [node name="ElevatorPlatform4" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -1222)
 
 [node name="ElevatorPlatform5" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -1417.33)
 
 [node name="ElevatorPlatform6" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -1612.67)
 
 [node name="ElevatorPlatform7" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -1808)
 
 [node name="ElevatorPlatform8" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(976, -2672)
+position = Vector2(976, -2003.33)
 
 [node name="ElevatorPlatform9" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -2198.67)
 
 [node name="ElevatorPlatform10" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -48)
 
 [node name="ElevatorPlatform11" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -244)
 
 [node name="ElevatorPlatform12" parent="Elevator2" instance=ExtResource("9_cn5b1")]
+position = Vector2(0, -440)
 
 [node name="ConveyorBelt" parent="." instance=ExtResource("4_4t6x8")]
 z_index = -2
@@ -185,15 +196,18 @@ position = Vector2(-380, 253)
 
 [node name="Pipe" parent="." instance=ExtResource("16_ouwm7")]
 position = Vector2(848, 296)
-
-[node name="Destination" parent="Pipe" index="5"]
-position = Vector2(56, -19)
+pipe_name = "A"
+destination = "B"
 
 [node name="Pipe2" parent="." instance=ExtResource("16_ouwm7")]
-position = Vector2(904, 296)
+position = Vector2(1324, 296)
+pipe_name = "B"
+destination = "C"
 
-[node name="Destination" parent="Pipe2" index="5"]
-position = Vector2(-56, -19)
+[node name="Pipe3" parent="." instance=ExtResource("16_ouwm7")]
+position = Vector2(-1172, -184)
+pipe_name = "C"
+destination = "A"
 
 [node name="Bridge" parent="." instance=ExtResource("17_662sx")]
 position = Vector2(1056, 312)
@@ -201,32 +215,8 @@ open_time = 10
 close_time = 11
 open = false
 
-[connection signal="body_entered" from="TileMapLayer/Coin" to="TileMapLayer/Coin" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78941" to="TileMapLayer/@Area2D@78941" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78942" to="TileMapLayer/@Area2D@78942" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78943" to="TileMapLayer/@Area2D@78943" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78944" to="TileMapLayer/@Area2D@78944" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78945" to="TileMapLayer/@Area2D@78945" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78946" to="TileMapLayer/@Area2D@78946" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78947" to="TileMapLayer/@Area2D@78947" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78948" to="TileMapLayer/@Area2D@78948" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78949" to="TileMapLayer/@Area2D@78949" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78950" to="TileMapLayer/@Area2D@78950" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78951" to="TileMapLayer/@Area2D@78951" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78952" to="TileMapLayer/@Area2D@78952" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78953" to="TileMapLayer/@Area2D@78953" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78954" to="TileMapLayer/@Area2D@78954" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78955" to="TileMapLayer/@Area2D@78955" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78956" to="TileMapLayer/@Area2D@78956" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78957" to="TileMapLayer/@Area2D@78957" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78958" to="TileMapLayer/@Area2D@78958" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78959" to="TileMapLayer/@Area2D@78959" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78960" to="TileMapLayer/@Area2D@78960" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78961" to="TileMapLayer/@Area2D@78961" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78962" to="TileMapLayer/@Area2D@78962" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@78963" to="TileMapLayer/@Area2D@78963" method="_on_body_entered"]
-
 [editable path="Elevator2"]
 [editable path="SuperElevator"]
 [editable path="Pipe"]
 [editable path="Pipe2"]
+[editable path="Pipe3"]
