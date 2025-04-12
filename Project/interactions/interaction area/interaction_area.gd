@@ -10,6 +10,7 @@ var interact : Callable = func():
 
 func _on_body_entered(body: Node2D) -> void:
 	InteractionManager.register_area(self)
+	Input.start_joy_vibration(0,0.25,0,0.25)
 
 
 func _on_body_exited(body: Node2D) -> void:

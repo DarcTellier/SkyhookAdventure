@@ -1,7 +1,11 @@
+res://Player/player.tscn
+res://Player/PipeTransShader.gdshader
+res://Levels/test_level.tscn
 res://UI/input_settings/input_settings.tscn
 res://UI/input_settings/input_button.tscn
-res://UI/input_settings/input_settings.gd
-res://Player/player.tscn
-res://Levels/test_level.tscn
-res://Globals/QuitGame.gd
-res://Player/Player.gd
+res://interactions/InteractionManager.tscn
+res://interactions/interaction area/interaction_area.tscn
+res://SetPieces/Special/npc_test.tscn
+res://SetPieces/Elevator/elevator_2.tscn
+res://Globals/Pause_Screen.tscn
+res://pipe.tscn

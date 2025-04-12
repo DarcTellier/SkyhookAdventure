@@ -14,7 +14,8 @@ var input_actions = {
 	"left":"LEFT",
 	"right":"RIGHT",
 	"jump":"JUMP",
-	"interact":"INTERACT"
+	"interact":"INTERACT",
+	"pause": "PAUSE"
 	 
 }
 
@@ -65,6 +66,9 @@ func _input(event: InputEvent) -> void:
 			# Turns double click into single click
 			if event is InputEventMouseButton and event.double_click:
 				event.double_click = false
+			
+			if event.as_text() == "Escape":
+				return
 
 			InputMap.action_erase_events(action_to_remap)
 			InputMap.action_add_event(action_to_remap, event)
@@ -73,13 +77,47 @@ func _input(event: InputEvent) -> void:
 			is_remapping = false
 			action_to_remap = null
 			remapping_button = null
+	
 
 
 
 func _update_action_list(button, event):
 	button.find_child("LabelInput").text = event.as_text().trim_suffix(" (Physical)")
+	
+	if event.as_text().containsn("Joypad"):
+		print("Joy")
+	
 	print(event.as_text())
 
 
 func _on_reset_button_pressed() -> void:
 	_create_action_list()
+
+
+#TODO fix the text from joypad to fit input label
+func fix_joy_pad_text (text): 
+
+	
+	pass
+#Joypad Motion on Axis 1 (Left Stick Y-Axis, Joystick 0 Y-Axis) with Value -0.61
+#Joypad Motion on Axis 1 (Left Stick Y-Axis, Joystick 0 Y-Axis) with Value 0.71
+#Joypad Motion on Axis 0 (Left Stick X-Axis, Joystick 0 X-Axis) with Value -0.53
+#Joypad Motion on Axis 0 (Left Stick X-Axis, Joystick 0 X-Axis) with Value 0.57
+#Joypad Button 0 (Bottom Action, Sony Cross, Xbox A, Nintendo B)
+#Joypad Button 2 (Left Action, Sony Square, Xbox X, Nintendo Y)
+#Joypad Button 3 (Top Action, Sony Triangle, Xbox Y, Nintendo X)
+#Joypad Button 1 (Right Action, Sony Circle, Xbox B, Nintendo A)
+#Joypad Motion on Axis 3 (Right Stick Y-Axis, Joystick 1 Y-Axis) with Value -0.53
+#Joypad Motion on Axis 3 (Right Stick Y-Axis, Joystick 1 Y-Axis) with Value 0.55
+#Joypad Motion on Axis 2 (Right Stick X-Axis, Joystick 1 X-Axis) with Value -0.53
+#Joypad Motion on Axis 2 (Right Stick X-Axis, Joystick 1 X-Axis) with Value 0.56
+#Joypad Button 11 (D-pad Up)
+#Joypad Button 12 (D-pad Down)
+#Joypad Button 13 (D-pad Left)
+#Joypad Button 14 (D-pad Right)
+#Joypad Motion on Axis 4 (Joystick 2 X-Axis, Left Trigger, Sony L2, Xbox LT) with Value 0.61
+#Joypad Motion on Axis 5 (Joystick 2 Y-Axis, Right Trigger, Sony R2, Xbox RT) with Value 0.56
+#Joypad Button 4 (Back, Sony Select, Xbox Back, Nintendo -)
+#Joypad Button 6 (Start, Xbox Menu, Nintendo +)
+#Joypad Button 7 (Left Stick, Sony L3, Xbox L/LS)
+#Joypad Button 8 (Right Stick, Sony R3, Xbox R/RS)

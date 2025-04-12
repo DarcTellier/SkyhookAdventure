@@ -8,7 +8,7 @@
 size = Vector2(113, 121)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jduda"]
-radius = 197.254
+radius = 99.1816
 
 [node name="NPCTest" type="CharacterBody2D"]
 script = ExtResource("1_v151e")

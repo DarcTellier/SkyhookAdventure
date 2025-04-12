@@ -8,8 +8,15 @@ extends CharacterBody2D
 @export var cayote_Time = 10
 var cayote_count= 0
 
+@export var input_freeze = false
 @export var jump = false
 @export var duck_jump_height = 2
+@export var up_press = false
+@export var down_press = false
+
+
+
+#TODO move these 3 to it's own script / do state machine
 var two_way_platform = false
 var white_platform = false
 var white_block_time_start = false
@@ -18,25 +25,31 @@ var white_block_time_start = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 
+func _ready() -> void:
+	PauseScreen.player_reff = self #pass refference to self to Pause screen for magic
+
 func _physics_process(delta):
 	update_gravity(delta)
 	cayote_time()
 	player_input()
 	
+	
+		
 
 func player_input():
-	jump_input()
-	movement_input()
-	white_block()
-	
+	if input_freeze == false:
+		jump_input()
+		movement_input()
+		white_block()
+		regular_inputs()
 
 
 func movement_input():
 	
 	var direction = Input.get_axis("left", "right")
-	if direction == -1:
+	if direction <0:
 		$Sprite.flip_h = true
-	elif direction == 1:
+	elif direction >0 :
 		$Sprite.flip_h = false
 	
 	if direction:
@@ -95,9 +108,19 @@ func cayote_time():
 			pass
 		
 
-
+#TODO CLEAN THIS 
 func _on_white_block_timer_timeout() -> void:
 	position.y+=1
 	z_index = -1
 	
 	
+func regular_inputs():
+	if Input.is_action_pressed("down"):
+		down_press = true
+	if Input.is_action_just_released("down"):
+		down_press = false	
+		
+	if Input.is_action_pressed("up"):
+		up_press = true
+	if Input.is_action_just_released("up"):
+		up_press = false	

@@ -1,4 +1,4 @@
-@tool
+#@tool
 extends Node2D
 
 @export var radius = Vector2.ONE * 256 
@@ -8,15 +8,20 @@ var platforms = []
 var orbit_angle_offset = 0
 var prev_child_count = 0 
 
-func _physics_process(delta):
+
+
+func _physics_process(delta: float) -> void:
 	if prev_child_count != get_child_count():
 		prev_child_count = get_child_count()
 		_find_platforms()
+		
+		
 	
 	
 	orbit_angle_offset += 2 * PI * delta / float(rotation_duration)
 	orbit_angle_offset = wrapf(orbit_angle_offset, -PI, PI)
 	_update_platforms()
+	
 
 
 func _update_platforms():

@@ -27,7 +27,8 @@
 				"de325c40-676c-4725-81e5-0f6e5a3d5479",
 				"d3c3cb8c-3d89-4207-860f-2f3837babc2e",
 				"e36b46af-bb49-47bb-8208-5a9dbbab0316",
-				"e84d8b99-30e3-437d-b4f6-10a3c8ddbd4c"
+				"e84d8b99-30e3-437d-b4f6-10a3c8ddbd4c",
+				"a855bef9-caae-4ffc-b668-b3b246df7f83"
 			]
 		},
 		{
@@ -35,7 +36,9 @@
 			"title": "Doing",
 			"tasks": [
 				"ae415a72-6a78-4776-bd4a-bf94266f67b7",
-				"450be229-48b7-4d76-b542-87af2bd6b0c3"
+				"450be229-48b7-4d76-b542-87af2bd6b0c3",
+				"d35f6a05-0e90-415c-8919-98584680bad2",
+				"f6b54d09-9164-4115-a965-c83312595aed"
 			]
 		},
 		{
@@ -215,6 +218,27 @@
 		{
 			"uuid": "e84d8b99-30e3-437d-b4f6-10a3c8ddbd4c",
 			"title": "scrolling level ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "a855bef9-caae-4ffc-b668-b3b246df7f83",
+			"title": "vibration for stuff / try fall shake ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "d35f6a05-0e90-415c-8919-98584680bad2",
+			"title": "Pipes",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "f6b54d09-9164-4115-a965-c83312595aed",
+			"title": "Menu on escape pauses everything",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []

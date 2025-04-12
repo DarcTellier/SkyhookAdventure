@@ -1,12 +1,66 @@
-[gd_scene load_steps=6 format=3 uid="uid://crj0lw3pyxu1h"]
+[gd_scene load_steps=11 format=3 uid="uid://crj0lw3pyxu1h"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_a2mvl"]
 [ext_resource type="Texture2D" uid="uid://b2fx23cihh3g7" path="res://Player/JUMPER.png" id="2_mun31"]
 [ext_resource type="AudioStream" uid="uid://qg13ioj71ekm" path="res://Assets/SoundFX/Jump70.wav" id="3_awb2x"]
 [ext_resource type="PackedScene" uid="uid://f5narbiaxcmv" path="res://UI/input_settings/input_settings.tscn" id="4_gwnis"]
+[ext_resource type="Shader" path="res://Player/PipeTransShader.gdshader" id="5_k53q1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufdn7"]
 size = Vector2(7, 25)
+
+[sub_resource type="Animation" id="Animation_k53q1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gwnis"]
+resource_name = "down_the_pipe"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 32)]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PipeTransShader/ColorRect:material:shader_parameter/progress")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5661, 1.9647)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fhl08"]
+_data = {
+"RESET": SubResource("Animation_k53q1"),
+"down_the_pipe": SubResource("Animation_gwnis")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fhl08"]
+shader = ExtResource("5_k53q1")
+shader_parameter/progress = 0.0
+shader_parameter/diamondPixelSize = 10.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 texture_filter = 1
@@ -15,6 +69,8 @@ floor_stop_on_slope = false
 floor_max_angle = 0.532325
 script = ExtResource("1_a2mvl")
 SPEED = 200.0
+cayote_Time = 20
+metadata/_edit_horizontal_guides_ = [16.0, 48.0]
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_mun31")
@@ -33,7 +89,25 @@ wait_time = 3.0
 one_shot = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+visible = false
 
 [node name="InputSettings" parent="CanvasLayer" instance=ExtResource("4_gwnis")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fhl08")
+}
+
+[node name="PipeTransShader" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="PipeTransShader"]
+material = SubResource("ShaderMaterial_fhl08")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [connection signal="timeout" from="White_Block_Timer" to="." method="_on_white_block_timer_timeout"]
