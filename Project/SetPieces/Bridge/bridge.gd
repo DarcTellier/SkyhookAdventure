@@ -1,4 +1,5 @@
 extends Node2D
+#TODO REdo the code
 
 @export var open_time = 21
 @export var close_time = 22

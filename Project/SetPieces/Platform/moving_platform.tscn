@@ -33,5 +33,6 @@ shape = SubResource("RectangleShape2D_mcyq1")
 
 [node name="Line2D" type="Line2D" parent="."]
 z_index = -5
+points = PackedVector2Array(144, 48, 208, 88, 208, 160, 144, 192, 0, 192, -48, 128, 0, 48, 144, 48)
 width = 2.0
 default_color = Color(0, 0, 0, 1)
