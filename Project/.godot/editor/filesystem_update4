@@ -5,3 +5,5 @@ res://Player/player.tscn
 res://Levels/test_level.tscn
 res://SetPieces/Platform/moving_platform.tscn
 res://SetPieces/Platform/push_wall.tscn
+res://SetPieces/Bridge/bridge.tscn
+res://SetPieces/Bridge/bridge.gd
