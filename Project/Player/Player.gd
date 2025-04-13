@@ -13,6 +13,8 @@ var cayote_count= 0
 @export var duck_jump_height = 2
 @export var up_press = false
 @export var down_press = false
+@export var left_press = false
+@export var right_press = false
 
 var in_pipe_transit = false
 
@@ -127,3 +129,13 @@ func regular_inputs():
 		up_press = true
 	if Input.is_action_just_released("up"):
 		up_press = false	
+	
+	if Input.is_action_pressed("left"):
+		left_press = true
+	if Input.is_action_just_released("left"):
+		left_press = false	
+	
+	if Input.is_action_pressed("right"):
+		right_press = true
+	if Input.is_action_just_released("right"):
+		right_press = false	

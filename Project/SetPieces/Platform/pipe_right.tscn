@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cj7pifxnlmwbh"]
+[gd_scene load_steps=6 format=3 uid="uid://ni1bf7mpmqir"]
 
-[ext_resource type="Script" path="res://SetPieces/Platform/pipe_up.gd" id="1_sd37r"]
-[ext_resource type="Texture2D" uid="uid://ch08wei0ssrcy" path="res://Assets/Art/Orange Pipe.png" id="2_ltdk7"]
+[ext_resource type="Script" path="res://SetPieces/Platform/pipe_right.gd" id="1_0cito"]
+[ext_resource type="Texture2D" uid="uid://ch08wei0ssrcy" path="res://Assets/Art/Orange Pipe.png" id="2_uct4e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_78010"]
 size = Vector2(18, 32)
@@ -12,15 +12,15 @@ size = Vector2(24, 10)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1uqvy"]
 size = Vector2(22, 2)
 
-[node name="Pipe_up" type="StaticBody2D"]
+[node name="Pipe_right" type="StaticBody2D"]
 z_index = -1
-rotation = 3.14159
+rotation = -1.5708
 scale = Vector2(2, 2)
-script = ExtResource("1_sd37r")
+script = ExtResource("1_0cito")
 metadata/_edit_horizontal_guides_ = [-36.0]
 
 [node name="OrangePipe" type="Sprite2D" parent="."]
-texture = ExtResource("2_ltdk7")
+texture = ExtResource("2_uct4e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 8)
@@ -38,7 +38,7 @@ shape = SubResource("RectangleShape2D_1uqvy")
 
 [node name="Location_pos" type="Marker2D" parent="."]
 z_index = -1
-position = Vector2(0, -36)
+position = Vector2(0, -20)
 
 [node name="InThePipeTimer" type="Timer" parent="."]
 wait_time = 1.25

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://2tfhwvoenkcu"]
 
-[ext_resource type="Script" path="res://pipe.gd" id="1_0eqlv"]
+[ext_resource type="Script" path="res://SetPieces/Platform/pipe_down.gd" id="1_0eqlv"]
 [ext_resource type="Texture2D" uid="uid://ch08wei0ssrcy" path="res://Assets/Art/Orange Pipe.png" id="2_hvcam"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_78010"]
@@ -13,6 +13,8 @@ size = Vector2(24, 10)
 size = Vector2(22, 2)
 
 [node name="Pipe_down" type="StaticBody2D"]
+z_index = -1
+scale = Vector2(2, 2)
 script = ExtResource("1_0eqlv")
 metadata/_edit_horizontal_guides_ = [-36.0]
 

@@ -17,3 +17,8 @@ res://Player/Player.gd
 res://SetPieces/Platform/pipe_down.tscn
 res://SetPieces/Platform/pipe_up.tscn
 res://SetPieces/Platform/pipe_up.gd
+res://SetPieces/Platform/pipe_right.gd
+res://SetPieces/Platform/pipe_right.tscn
+res://SetPieces/Platform/pipe_down.gd
+res://SetPieces/Platform/pipe_Left.tscn
+res://SetPieces/Platform/pipe_left.gd
