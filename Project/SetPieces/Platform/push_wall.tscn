@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://f74po7k7cr00"]
+
+[ext_resource type="Script" path="res://SetPieces/Platform/push_wall.gd" id="1_o7tyd"]
+[ext_resource type="Texture2D" uid="uid://bcw08eqr5l11a" path="res://Assets/Art/Platform.png" id="1_rvudq"]
+[ext_resource type="Script" path="res://interactions/interaction area/interaction_area.gd" id="3_l2hpb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8g3f"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m055w"]
+size = Vector2(163, 320)
+
+[node name="PushWall" type="Node2D"]
+script = ExtResource("1_o7tyd")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+rotation = 1.5708
+scale = Vector2(5, 5)
+sync_to_physics = false
+
+[node name="Platform" type="Sprite2D" parent="AnimatableBody2D"]
+texture = ExtResource("1_rvudq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+shape = SubResource("RectangleShape2D_o8g3f")
+
+[node name="End" type="Marker2D" parent="."]
+
+[node name="InteractionArea" type="Area2D" parent="."]
+script = ExtResource("3_l2hpb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(-251, -1.09716e-05)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_m055w")
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]

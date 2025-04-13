@@ -20,7 +20,6 @@ direction = true
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(144, 48)
-rotation = 0.558599
 rotates = false
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="PathFollow2D"]

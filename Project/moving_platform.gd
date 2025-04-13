@@ -2,25 +2,35 @@
 extends Path2D
 
 @export var loop = false
+@export var rotates = false
 @export var speed = 0.5
 @export var direction = false
-
+@export var draw_line_path = true
 
 func _ready() -> void: 
-	$PathFollow2D.loop = loop 
+	settings()
 	draw_lines()
+	$PathFollow2D.rotates = rotates
 	
+
+
+func settings():
+	$PathFollow2D.loop = loop 
+	
+
 func draw_lines():
-	for i in curve.point_count:
-		$Line2D.add_point(curve.get_point_position(i),i)
+	if draw_line_path == true:
+		for i in curve.point_count:
+			$Line2D.add_point(curve.get_point_position(i),i)
 	
 	
 	
+
 
 	
 func _physics_process(delta: float) -> void:
 	move_platform(delta)
-	
+	settings()
 
 func move_platform(delta):
 	if loop == false:
