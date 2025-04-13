@@ -1,3 +1,9 @@
+AnimatableBody2D
+InteractionArea
+CollisionShape2D
+Line2D
+PathFollow2D
+Path2D
 Timer
 StaticBody2D
 Marker2D
@@ -5,11 +11,5 @@ ColorRect
 Control
 CanvasLayer
 AnimationPlayer
-CollisionShape2D
 Area2D
 AudioStreamPlayer
-Label
-Panel
-Button
-HBoxContainer
-MarginContainer
