@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bcw08eqr5l11a" path="res://Assets/Art/Platform.png" id="1_rvudq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8g3f"]
-size = Vector2(64, 16)
+size = Vector2(65, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o7tyd"]
 size = Vector2(320, 172)
@@ -15,12 +15,13 @@ script = ExtResource("1_o7tyd")
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
 rotation = 1.5708
 scale = Vector2(5, 5)
-sync_to_physics = false
 
 [node name="Platform" type="Sprite2D" parent="AnimatableBody2D"]
 texture = ExtResource("1_rvudq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(1.60001, 0)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_o8g3f")
 
 [node name="Area2D" type="Area2D" parent="AnimatableBody2D"]

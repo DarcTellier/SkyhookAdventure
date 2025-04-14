@@ -289,3 +289,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+
+[node name="UnstuckTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="UnstuckTimer" to="." method="_on_unstuck_timer_timeout"]
