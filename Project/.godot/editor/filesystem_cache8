@@ -1,9 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744575661
+::res://::1744604372
 moving_platform.gd::GDScript::-1::1744524223::0::1::::<>Path2D<>::
 pipe.gd::GDScript::-1::1744498025::0::1::::<>StaticBody2D<>::
 pipe.tscn::PackedScene::6891188668135466746::1744508078::0::1::::<><>::res://pipe.gd<>uid://ch08wei0ssrcy::::res://Assets/Art/Orange Pipe.png
 README.md::TextFile::-1::1744385245::0::1::::<><>::
+donut_platform.gd::GDScript::-1::1744600325::0::1::::<>RigidBody2D<>::
+donut_platform.tscn::PackedScene::7702266152097334764::1744604371::0::1::::<><>::res://donut_platform.gd<>uid://e4y8ij3jphpw::::res://Assets/Tiles/DonutPlatformA.png
+DonutDropBlock.tscn::PackedScene::8625583322492341276::1744604372::0::1::::<><>::res://donut_drop_block.gd<>uid://dh0bg0eo8yens::::res://donut_platform.tscn
+donut_drop_block.gd::GDScript::-1::1744600761::0::1::::<>Node2D<>::
 ::res://addons/::1744386272
 ::res://addons/kanban_tasks/::1744243507
 icon.svg::CompressedTexture2D::2584192313033160869::1744243506::1744243507::1::::<><>::
@@ -100,13 +104,16 @@ Sign_post.png::CompressedTexture2D::1155982396998601401::1696122158::1696122164:
 ::res://Assets/Interactables/::1744154831
 interactables.gd::GDScript::-1::1696122932::0::1::::<>Node2D<>::
 interactables.tscn::PackedScene::1755353958835062856::1696166655::0::1::::<><>::res://Assets/Interactables/interactables.gd<>uid://qp74jsd02jvd::::res://Assets/Art/Sign_post.png
-::res://Assets/SoundFX/::1744428025
+::res://Assets/SoundFX/::1744592049
 Jump70.wav::AudioStreamWAV::1137036851040913376::1695596339::1695596384::1::::<><>::
+mario firework.wav::AudioStreamWAV::1426968306384398651::1744590942::1744592049::1::::<><>::
 Pause.wav::AudioStreamWAV::8343622270905554751::1744428015::1744428025::1::::<><>::
 Pickup_Coin44.wav::AudioStreamWAV::8981404114770650904::1695596634::1695596636::1::::<><>::
 Speech.wav::AudioStreamWAV::5701118306301500875::1744331361::1744331370::1::::<><>::
-::res://Assets/Tiles/::1744313892
+::res://Assets/Tiles/::1744607898
 Brick1.png::CompressedTexture2D::6512032052099658021::1695433049::1695821840::1::::<><>::
+DonutPlatformA.png::CompressedTexture2D::342138903819977720::1744607898::1744607899::1::::<><>::
+DonutPlatformB.png::CompressedTexture2D::1323578223892370151::1744607898::1744607899::1::::<><>::
 Ramp1.png::CompressedTexture2D::1546633754484052727::1744208370::1744208499::1::::<><>::
 Ramp2.png::CompressedTexture2D::7028921304249185850::1744208773::1744208773::1::::<><>::
 WhiteBlock.png::CompressedTexture2D::699672769174616245::1744313856::1744313892::1::::<><>::
@@ -127,15 +134,15 @@ interaction_manager.gd::GDScript::-1::1744334173::0::1::::<>Node2D<>::
 ::res://interactions/interaction area/::1744477679
 interaction_area.gd::GDScript::-1::1744402447::0::1::::InteractionArea<>Area2D<>::
 interaction_area.tscn::PackedScene::2324735354918193001::1744477679::0::1::::<><>::res://interactions/interaction area/interaction_area.gd
-::res://Levels/::1744574979
-test_level.tscn::PackedScene::2268406889581559639::1744574979::0::1::::<><>::uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://ck281pk8dgdvi::::res://Assets/Art/Block1.png<>uid://bssllwhv8q114::::res://SetPieces/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://SetPieces/Platform/platform.tscn<>uid://wbg3j0053f3l::::res://Assets/Tiles/Ramp1.png<>uid://cba8ut47w6fbk::::res://Collectables/coin.tscn<>uid://dopskpw7d4vj0::::res://SetPieces/conveyor_belt/conveyor_belt.tscn<>uid://c7e4ko3cvb3uk::::res://Assets/Tiles/Ramp2.png<>uid://dq4sm4bqr0xp1::::res://SetPieces/Elevator/elevator_2.tscn<>uid://d0bhty3pmlimf::::res://SetPieces/Platform/elevatorPlatform.tscn<>uid://cx5onk7aqr26w::::res://Assets/Art/bush.png<>uid://dwuaep5q40l2r::::res://SetPieces/Platform/platform_one_way_collision.tscn<>uid://qk401y4swsdx::::res://SetPieces/Platform/platform_two_way_collision.tscn<>uid://bflj8qsa6qg7f::::res://SetPieces/Special/white_block.tscn<>uid://btodagme3g01l::::res://SetPieces/Special/super_elevator.tscn<>uid://b1n1ydx3263wb::::res://SetPieces/Special/npc_test.tscn<>uid://bd8kruq2qspas::::res://SetPieces/Bridge/bridge.tscn<>uid://cj7pifxnlmwbh::::res://SetPieces/Platform/pipe_up.tscn<>uid://ni1bf7mpmqir::::res://SetPieces/Platform/pipe_right.tscn<>uid://2tfhwvoenkcu::::res://SetPieces/Platform/pipe_down.tscn<>uid://ddcrppmnd4fie::::res://SetPieces/Platform/pipe_Left.tscn<>uid://b6gcmwqk40j7y::::res://SetPieces/Platform/moving_platform.tscn<>uid://f74po7k7cr00::::res://SetPieces/Platform/push_wall.tscn
-::res://Player/::1744574980
+::res://Levels/::1744604371
+test_level.tscn::PackedScene::2268406889581559639::1744604371::0::1::::<><>::uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://ck281pk8dgdvi::::res://Assets/Art/Block1.png<>uid://bssllwhv8q114::::res://SetPieces/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://SetPieces/Platform/platform.tscn<>uid://wbg3j0053f3l::::res://Assets/Tiles/Ramp1.png<>uid://cba8ut47w6fbk::::res://Collectables/coin.tscn<>uid://dopskpw7d4vj0::::res://SetPieces/conveyor_belt/conveyor_belt.tscn<>uid://c7e4ko3cvb3uk::::res://Assets/Tiles/Ramp2.png<>uid://dq4sm4bqr0xp1::::res://SetPieces/Elevator/elevator_2.tscn<>uid://d0bhty3pmlimf::::res://SetPieces/Platform/elevatorPlatform.tscn<>uid://cx5onk7aqr26w::::res://Assets/Art/bush.png<>uid://dwuaep5q40l2r::::res://SetPieces/Platform/platform_one_way_collision.tscn<>uid://qk401y4swsdx::::res://SetPieces/Platform/platform_two_way_collision.tscn<>uid://bflj8qsa6qg7f::::res://SetPieces/Special/white_block.tscn<>uid://btodagme3g01l::::res://SetPieces/Special/super_elevator.tscn<>uid://b1n1ydx3263wb::::res://SetPieces/Special/npc_test.tscn<>uid://cns2gg8y7rotr::::res://SetPieces/Bridge/bridge.tscn<>uid://cj7pifxnlmwbh::::res://SetPieces/Platform/pipe_up.tscn<>uid://ni1bf7mpmqir::::res://SetPieces/Platform/pipe_right.tscn<>uid://2tfhwvoenkcu::::res://SetPieces/Platform/pipe_down.tscn<>uid://ddcrppmnd4fie::::res://SetPieces/Platform/pipe_Left.tscn<>uid://b6gcmwqk40j7y::::res://SetPieces/Platform/moving_platform.tscn<>uid://f74po7k7cr00::::res://SetPieces/Platform/push_wall.tscn<>uid://du5kdkiy4b7yu::::res://DonutDropBlock.tscn
+::res://Player/::1744604372
 Camera2D.gd::GDScript::-1::1744159217::0::1::::<>Camera2D<>::
 JUMPER.png::CompressedTexture2D::4293287532075893508::1695433557::1695821807::1::::<><>::
-PipeTransShader.gdshader::Shader::-1::1744575673::0::1::::<><>::
+PipeTransShader.gdshader::Shader::-1::1744604372::0::1::::<><>::
 PlatformerCamera.tscn::PackedScene::2108968177742802010::1744212061::0::1::::<><>::res://Player/Camera2D.gd
-Player.gd::GDScript::-1::1744504643::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5986169877054164323::1744574979::0::1::::<><>::res://Player/Player.gd<>uid://b2fx23cihh3g7::::res://Player/JUMPER.png<>uid://qg13ioj71ekm::::res://Assets/SoundFX/Jump70.wav<>uid://f5narbiaxcmv::::res://UI/input_settings/input_settings.tscn<>res://Player/PipeTransShader.gdshader
+Player.gd::GDScript::-1::1744582892::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::5986169877054164323::1744604371::0::1::::<><>::res://Player/Player.gd<>uid://b2fx23cihh3g7::::res://Player/JUMPER.png<>uid://qg13ioj71ekm::::res://Assets/SoundFX/Jump70.wav<>uid://f5narbiaxcmv::::res://UI/input_settings/input_settings.tscn<>res://Player/PipeTransShader.gdshader
 ::res://Scenes/::1744251388
 main.gd::GDScript::-1::1743978442::0::1::::<>Node2D<>::
 main.tscn::PackedScene::6461329282633601035::1744251388::0::1::::<><>::res://Scenes/main.gd<>uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://bd8kruq2qspas::::res://SetPieces/Bridge/bridge.tscn<>uid://dopskpw7d4vj0::::res://SetPieces/conveyor_belt/conveyor_belt.tscn<>res://SetPieces/Elevator/elevator_platform.tscn<>uid://cba8ut47w6fbk::::res://Collectables/coin.tscn<>uid://c4rr8c7swlrik::::res://SetPieces/DisapearingBlocks/disapearing_box_orange.tscn<>uid://kbo3iwxuwrwy::::res://SetPieces/DisapearingBlocks/disapearing_box_blue.tscn<>uid://bssllwhv8q114::::res://SetPieces/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://SetPieces/Platform/platform.tscn<>uid://5bunr2xo7vta::::res://Player/PlatformerCamera.tscn<>res://event_trigger.tscn<>uid://0akonjc8ebem::::res://Assets/Interactables/interactables.tscn<>uid://b755igrpchp1b::::res://SetPieces/DirectionalLift/directional_lift.tscn
@@ -146,9 +153,9 @@ world_1.tscn::PackedScene::7024045794211472351::1744212542::0::1::::<><>::uid://
 ::res://SetPieces/::1744313776
 ::res://SetPieces/Ball/::1744220214
 ball_test.tscn::PackedScene::583203509572001742::1744220214::0::1::::<><>::
-::res://SetPieces/Bridge/::1744575661
-bridge.tscn::PackedScene::5724105575074367511::1744575673::0::1::::<><>::res://SetPieces/Bridge/bridge_2.gd<>uid://c6fywfjuqwdh7::::res://Assets/Art/Bridge.png
-bridge_2.gd::GDScript::-1::1744574910::0::1::::<>Node2D<>::
+::res://SetPieces/Bridge/::1744604371
+bridge.gd::GDScript::-1::1744578668::0::1::::<>Node2D<>::
+bridge.tscn::PackedScene::5724105575074367511::1744604371::0::1::::<><>::res://SetPieces/Bridge/bridge.gd<>uid://c6fywfjuqwdh7::::res://Assets/Art/Bridge.png
 ::res://SetPieces/conveyor_belt/::1744156184
 conveyor.gd::GDScript::-1::1743978442::0::1::::<>AnimatableBody2D<>::
 conveyor.tscn::PackedScene::7925134343924996067::1744156184::0::1::::<><>::res://SetPieces/conveyor_belt/conveyor.gd<>uid://b1v7jm4d4q1d7::::res://Assets/Art/Conveyor.png
@@ -168,9 +175,9 @@ elevator_platform.tscn::PackedScene::3777588736366296018::1744316610::0::1::::<>
 ::res://SetPieces/OrbitingPlatform/::1744427076
 OrbitingPlatform.gd::GDScript::-1::1744427076::0::1::::<>Node2D<>::
 orbiting_platform.tscn::PackedScene::3687667366730381801::1744252036::0::1::::<><>::res://SetPieces/OrbitingPlatform/OrbitingPlatform.gd<>uid://2rtj2344w1e::::res://Assets/Art/OrbitingPlatformBlock.png
-::res://SetPieces/Platform/::1744574980
+::res://SetPieces/Platform/::1744604371
 elevatorPlatform.tscn::PackedScene::8916507773330667317::1744487072::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
-moving_platform.tscn::PackedScene::4574805147233531220::1744574979::0::1::::<><>::res://moving_platform.gd<>uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
+moving_platform.tscn::PackedScene::4574805147233531220::1744604371::0::1::::<><>::res://moving_platform.gd<>uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
 pipe_down.gd::GDScript::-1::1744508073::0::1::::<>StaticBody2D<>::
 pipe_down.tscn::PackedScene::1934639229671736488::1744510801::0::1::::<><>::res://SetPieces/Platform/pipe_down.gd<>uid://ch08wei0ssrcy::::res://Assets/Art/Orange Pipe.png
 pipe_left.gd::GDScript::-1::1744510732::0::1::::<>StaticBody2D<>::
@@ -185,7 +192,7 @@ platform_one_way_collision.tscn::PackedScene::8744712144333932139::1744472058::0
 platform_two_way_collision.gd::GDScript::-1::1744470500::0::1::::<>AnimatableBody2D<>::
 platform_two_way_collision.tscn::PackedScene::1145472117411942453::1744487072::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png<>res://SetPieces/Platform/platform_two_way_collision.gd
 push_wall.gd::GDScript::-1::1744527363::0::1::::<>Node2D<>::
-push_wall.tscn::PackedScene::418792671276735103::1744574980::0::1::::<><>::res://SetPieces/Platform/push_wall.gd<>uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png<>res://interactions/interaction area/interaction_area.gd
+push_wall.tscn::PackedScene::418792671276735103::1744604371::0::1::::<><>::res://SetPieces/Platform/push_wall.gd<>uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png<>res://interactions/interaction area/interaction_area.gd
 ::res://SetPieces/Slide/::1695821790
 ::res://SetPieces/Special/::1744487072
 npc_test.gd::GDScript::-1::1744333644::0::1::::<>CharacterBody2D<>::

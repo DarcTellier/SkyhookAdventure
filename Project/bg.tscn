@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv875agreijqm"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ptgyr"]
+size = Vector2(10000, 10000)
+
+[sub_resource type="Environment" id="Environment_t4gw0"]
+background_mode = 3
+background_energy_multiplier = 0.82
+tonemap_mode = 3
+glow_enabled = true
+glow_intensity = 0.45
+glow_bloom = 0.36
+
+[node name="BG" type="Node2D"]
+z_index = -100
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+self_modulate = Color(0, 0.232333, 0.82, 1)
+mesh = SubResource("QuadMesh_ptgyr")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_t4gw0")

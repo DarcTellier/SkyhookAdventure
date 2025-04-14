@@ -11,20 +11,14 @@
 			"uuid": "3c73aebb-6b77-4faf-9bfa-e4bfe5d4e4d2",
 			"title": "Todo",
 			"tasks": [
-				"205fe505-ca94-42ae-b789-8a61f5a547f2",
-				"6a1bd327-546c-4da8-8242-274ae329f7f4",
 				"a849b3b1-5076-408f-82ee-d310be981166",
-				"9c758cf7-0d3a-4ba6-95cb-be2cfd8e86ed",
 				"db99e767-30b3-46ce-b2df-00e2f303e5e2",
 				"c4151983-efe3-4271-9fa4-5cb5cc1a2fa1",
 				"66e0ef7f-92a5-489d-88bb-6be0fa84849f",
-				"cd554dd2-2a65-41f6-b049-db0057521721",
 				"f935b255-4a43-4469-9951-dce19314360c",
 				"e5f43404-8be4-4eb2-8333-1de4f3af6171",
-				"fa132509-ad1c-44de-b0c4-14b7e01615b6",
 				"0cd01409-b013-4713-bfe8-c550d4b201a2",
 				"457ea2b5-ca9c-4e54-b4c9-7f6ffefdd21f",
-				"de325c40-676c-4725-81e5-0f6e5a3d5479",
 				"d3c3cb8c-3d89-4207-860f-2f3837babc2e",
 				"e36b46af-bb49-47bb-8208-5a9dbbab0316",
 				"e84d8b99-30e3-437d-b4f6-10a3c8ddbd4c",
@@ -35,15 +29,23 @@
 			"uuid": "d86f7127-6204-4d78-9636-e131877fdc38",
 			"title": "Doing",
 			"tasks": [
-				"450be229-48b7-4d76-b542-87af2bd6b0c3",
+				"de325c40-676c-4725-81e5-0f6e5a3d5479",
+				"9c758cf7-0d3a-4ba6-95cb-be2cfd8e86ed",
 				"f6b54d09-9164-4115-a965-c83312595aed",
-				"ae415a72-6a78-4776-bd4a-bf94266f67b7"
+				"ae415a72-6a78-4776-bd4a-bf94266f67b7",
+				"fa132509-ad1c-44de-b0c4-14b7e01615b6",
+				"e6d500d3-b1a1-4aa2-b7f2-acef0144dec4"
 			]
 		},
 		{
 			"uuid": "ac5c2b6b-2961-422f-a1a9-82991b6fcfc6",
 			"title": "Done",
 			"tasks": [
+				"cd554dd2-2a65-41f6-b049-db0057521721",
+				"6a1bd327-546c-4da8-8242-274ae329f7f4",
+				"b365abfb-3415-4703-b4d2-6127721e6795",
+				"205fe505-ca94-42ae-b789-8a61f5a547f2",
+				"450be229-48b7-4d76-b542-87af2bd6b0c3",
 				"d35f6a05-0e90-415c-8919-98584680bad2",
 				"76621173-a1e6-43f2-bd5a-e1e4b5c94c11",
 				"fa04b33b-6a17-4525-9672-856f6c9ae083",
@@ -239,6 +241,20 @@
 		{
 			"uuid": "f6b54d09-9164-4115-a965-c83312595aed",
 			"title": "Menu on escape pauses everything",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "b365abfb-3415-4703-b4d2-6127721e6795",
+			"title": "Time Bridge mechanic",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "e6d500d3-b1a1-4aa2-b7f2-acef0144dec4",
+			"title": "get rid of player reff button presss objects will handle its own input",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []

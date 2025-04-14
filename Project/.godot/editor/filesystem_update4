@@ -7,3 +7,15 @@ res://SetPieces/Platform/moving_platform.tscn
 res://SetPieces/Platform/push_wall.tscn
 res://SetPieces/Bridge/bridge.tscn
 res://SetPieces/Bridge/bridge.gd
+res://Player/Player.gd
+res://donut_platform.gd
+res://donut_platform.tscn
+res://donut.tscn
+res://donut.gd
+res://DonutDropBlock.tscn
+res://donut_drop_block.gd
+res://door.gd
+res://door.tscn
+res://SetPieces/Platform/pipe_Left.tscn
+res://Globals/GDoorNetwork.gd
+res://bg.tscn

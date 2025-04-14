@@ -118,7 +118,7 @@ func _on_white_block_timer_timeout() -> void:
 	position.y+=1
 	z_index = -1
 	
-	
+
 func regular_inputs():
 	if Input.is_action_pressed("down"):
 		down_press = true
