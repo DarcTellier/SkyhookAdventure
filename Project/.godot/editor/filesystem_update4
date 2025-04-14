@@ -29,3 +29,4 @@ res://SetPieces/Elevator/elevator_2.gd
 res://SetPieces/OrbitingPlatform/OrbitingPlatform.gd
 res://SetPieces/Special/npc_test.gd
 res://moving_platform.gd
+res://SetPieces/Platform/push_wall.gd
