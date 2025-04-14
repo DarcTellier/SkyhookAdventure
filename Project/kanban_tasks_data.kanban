@@ -11,6 +11,7 @@
 			"uuid": "3c73aebb-6b77-4faf-9bfa-e4bfe5d4e4d2",
 			"title": "Todo",
 			"tasks": [
+				"584bb648-9fd9-420f-a968-0af52261de17",
 				"a849b3b1-5076-408f-82ee-d310be981166",
 				"db99e767-30b3-46ce-b2df-00e2f303e5e2",
 				"c4151983-efe3-4271-9fa4-5cb5cc1a2fa1",
@@ -255,6 +256,13 @@
 		{
 			"uuid": "e6d500d3-b1a1-4aa2-b7f2-acef0144dec4",
 			"title": "get rid of player reff button presss objects will handle its own input",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "584bb648-9fd9-420f-a968-0af52261de17",
+			"title": "convert to  states machine for movement ?",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []

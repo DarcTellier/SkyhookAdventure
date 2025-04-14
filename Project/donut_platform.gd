@@ -52,6 +52,8 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		player_on_platform = true
 		time_stood_on = 0.0
 		start_shaking()
+	if body.name == "AnimatableBody2D": 
+		drop()
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.name == "Player":
@@ -73,7 +75,7 @@ func drop():
 	if respawn_time > 0:
 		await get_tree().create_timer(respawn_time).timeout
 		spawn_new_donut()
-	#queue_free()
+		queue_free()
 
 func spawn_new_donut():
 	get_parent().respawn()

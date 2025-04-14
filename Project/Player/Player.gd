@@ -22,8 +22,7 @@ var in_pipe_transit = false
 
 #TODO move these 3 to it's own script / do state machine
 var two_way_platform = false
-var white_platform = false
-var white_block_time_start = false
+
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -45,7 +44,6 @@ func player_input():
 	if input_freeze == false:
 		jump_input()
 		movement_input()
-		white_block()
 		regular_inputs()
 
 
@@ -81,18 +79,10 @@ func jump_input():
 	
 	# Handle Jump.
 	if Input.is_action_just_pressed("jump")&& jump == true :  
-		z_index = 0 # white block 
 		velocity.y = JUMP_VELOCITY
 		$AudioStreamPlayer2D.play()
 
-func white_block():
-	if Input.is_action_pressed("down") && white_platform == true:
-		if white_block_time_start == false:
-			$White_Block_Timer.start()
-			white_block_time_start = true
-	else:
-		$White_Block_Timer.stop()
-		white_block_time_start = false 
+
 		
 
 func update_gravity(delta):
@@ -113,10 +103,8 @@ func cayote_time():
 			pass
 		
 
-#TODO CLEAN THIS 
-func _on_white_block_timer_timeout() -> void:
-	position.y+=1
-	z_index = -1
+
+
 	
 
 func regular_inputs():

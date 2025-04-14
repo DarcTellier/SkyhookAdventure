@@ -19,3 +19,13 @@ res://door.tscn
 res://SetPieces/Platform/pipe_Left.tscn
 res://Globals/GDoorNetwork.gd
 res://bg.tscn
+res://SetPieces/Special/white_block.tscn
+res://SetPieces/Special/white_block.gd
+res://SetPieces/Platform/platform_two_way_collision.gd
+res://SetPieces/Platform/platform_two_way_collision.tscn
+res://SetPieces/Special/super_elevator.tscn
+res://SetPieces/Special/super_elevator.gd
+res://SetPieces/Elevator/elevator_2.gd
+res://SetPieces/OrbitingPlatform/OrbitingPlatform.gd
+res://SetPieces/Special/npc_test.gd
+res://moving_platform.gd

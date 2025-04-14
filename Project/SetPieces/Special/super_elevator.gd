@@ -19,18 +19,12 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 		inside_elevator = false
 
 func _physics_process(delta: float) -> void:
-	
 	if Input.is_action_pressed("up") && inside_elevator ==true :
-		
 		if position.y >= max_height.y:
 			position.y -= speed
 			if position.y < max_height.y:# evens out the platform 
 				position.y = max_height.y
-			
-			
-		
-			
-		
+
 	if Input.is_action_pressed("down") && inside_elevator ==true :
 		if position.y <= min_height.y:
 			position.y += speed

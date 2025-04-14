@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8g3f"]
 size = Vector2(64, 16)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_m055w"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o7tyd"]
 size = Vector2(163, 320)
 
 [node name="PushWall" type="Node2D"]
@@ -32,6 +32,6 @@ script = ExtResource("3_l2hpb")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 position = Vector2(-251, -1.09716e-05)
 rotation = 1.5708
-shape = SubResource("RectangleShape2D_m055w")
+shape = SubResource("RectangleShape2D_o7tyd")
 
 [connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]

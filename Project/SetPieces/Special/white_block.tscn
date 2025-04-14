@@ -26,5 +26,15 @@ texture = ExtResource("2_68g1a")
 position = Vector2(0, -24.5)
 shape = SubResource("RectangleShape2D_nbp1y")
 
+[node name="White_Block_Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="ZReturnTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="timeout" from="White_Block_Timer" to="." method="_on_white_block_timer_timeout"]
+[connection signal="timeout" from="ZReturnTimer" to="." method="_on_z_return_timer_timeout"]
