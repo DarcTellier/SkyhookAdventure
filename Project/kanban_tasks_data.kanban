@@ -23,14 +23,15 @@
 				"d3c3cb8c-3d89-4207-860f-2f3837babc2e",
 				"e36b46af-bb49-47bb-8208-5a9dbbab0316",
 				"e84d8b99-30e3-437d-b4f6-10a3c8ddbd4c",
-				"a855bef9-caae-4ffc-b668-b3b246df7f83"
+				"a855bef9-caae-4ffc-b668-b3b246df7f83",
+				"0b997293-c044-4408-8ae5-d794da8598e4",
+				"c110b449-9870-4452-9ff6-43dff9f1fe74"
 			]
 		},
 		{
 			"uuid": "d86f7127-6204-4d78-9636-e131877fdc38",
 			"title": "Doing",
 			"tasks": [
-				"de325c40-676c-4725-81e5-0f6e5a3d5479",
 				"9c758cf7-0d3a-4ba6-95cb-be2cfd8e86ed",
 				"f6b54d09-9164-4115-a965-c83312595aed",
 				"ae415a72-6a78-4776-bd4a-bf94266f67b7",
@@ -42,6 +43,7 @@
 			"uuid": "ac5c2b6b-2961-422f-a1a9-82991b6fcfc6",
 			"title": "Done",
 			"tasks": [
+				"de325c40-676c-4725-81e5-0f6e5a3d5479",
 				"cd554dd2-2a65-41f6-b049-db0057521721",
 				"6a1bd327-546c-4da8-8242-274ae329f7f4",
 				"b365abfb-3415-4703-b4d2-6127721e6795",
@@ -263,6 +265,20 @@
 		{
 			"uuid": "584bb648-9fd9-420f-a968-0af52261de17",
 			"title": "convert to  states machine for movement ?",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "0b997293-c044-4408-8ae5-d794da8598e4",
+			"title": "Imstuck Bro ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "c110b449-9870-4452-9ff6-43dff9f1fe74",
+			"title": "ImStuckBro Skit",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []

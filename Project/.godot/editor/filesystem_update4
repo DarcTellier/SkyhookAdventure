@@ -6,3 +6,6 @@ res://SetPieces/Platform/push_wall.tscn
 res://Player/Player.gd
 res://Player/stuck_in_wall_solution.gd
 res://door.tscn
+res://SetPieces/Bridge/TimeGate.tscn
+res://SetPieces/Bridge/time_gate.gd
+res://CRT.gdshader
