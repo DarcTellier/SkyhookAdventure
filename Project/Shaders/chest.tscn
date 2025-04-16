@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://1nqtaudb0ijo"]
+
+[ext_resource type="Texture2D" uid="uid://mqk3uvp8xj73" path="res://Assets/Art/CommonClearChesOpen.png" id="1_qxfws"]
+[ext_resource type="Texture2D" uid="uid://bf1kd52tbv6q3" path="res://Assets/Art/CommonClearChestClose.png" id="2_rlpy2"]
+[ext_resource type="Shader" path="res://Shaders/FireWork.gdshader" id="3_qxfws"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oq42h"]
+shader = ExtResource("3_qxfws")
+shader_parameter/pi = 3.14159
+shader_parameter/TWOPI = 6.28319
+shader_parameter/NUM_EXPLOSIONS = 16.0
+shader_parameter/NUM_PARTICLES = 70.0
+shader_parameter/MOD3 = Vector3(0.1031, 0.11369, 0.13787)
+
+[sub_resource type="QuadMesh" id="QuadMesh_f2mxo"]
+
+[node name="Chest" type="Node2D"]
+
+[node name="CommonClearChesOpen" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_qxfws")
+
+[node name="CommonClearChestClose" type="Sprite2D" parent="."]
+texture = ExtResource("2_rlpy2")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CommonClearChestClose"]
+z_index = -1
+material = SubResource("ShaderMaterial_oq42h")
+position = Vector2(8.34465e-07, 3)
+scale = Vector2(30, 24)
+mesh = SubResource("QuadMesh_f2mxo")

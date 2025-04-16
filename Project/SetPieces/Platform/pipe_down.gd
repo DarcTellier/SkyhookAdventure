@@ -78,6 +78,7 @@ func _on_ou_the_pipe_timer_timeout() -> void:
 	player_reff_transion.in_pipe_transit = false
 	player_reff_transion.input_freeze = false
 	player_reff_transion.down_press = false
-	player_reff_transion = ""
+	player_reff_transion.z_index= 0
+	player_reff_transion = null
 	
 	pass # Replace with function body.

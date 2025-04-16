@@ -11,17 +11,18 @@ size = Vector2(112, 16)
 
 [node name="TimeGate" type="Node2D"]
 position = Vector2(301, 124)
+rotation = 1.5708
 script = ExtResource("1_krim8")
 schedule_windows = Array[Dictionary]([{
 "close": {
-"hour": 9,
-"minute": 18,
-"second": 13
+"hour": 1,
+"minute": 41,
+"second": 0
 },
 "open": {
-"hour": 9,
-"minute": 18,
-"second": 3
+"hour": 1,
+"minute": 40,
+"second": 45
 }
 }, {
 "close": {

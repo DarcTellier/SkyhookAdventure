@@ -146,7 +146,7 @@ func close_gate():
 		
 		tweenA.tween_property($AGate, "position:x", gate_A_default_position.x , close_time_in_sec)
 		tweenB.tween_property($BGate, "position:x", gate_B_default_position.x, close_time_in_sec)
-		
+		print("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮")
 		
 
 	

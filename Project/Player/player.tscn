@@ -268,12 +268,6 @@ stream = ExtResource("3_awb2x")
 volume_db = -15.727
 panning_strength = 3.0
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-process_mode = 3
-visible = false
-
-[node name="InputSettings" parent="CanvasLayer" instance=ExtResource("4_gwnis")]
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_fhl08")
@@ -292,5 +286,11 @@ color = Color(0, 0, 0, 1)
 
 [node name="UnstuckTimer" type="Timer" parent="."]
 one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+visible = false
+
+[node name="InputSettings" parent="CanvasLayer" instance=ExtResource("4_gwnis")]
 
 [connection signal="timeout" from="UnstuckTimer" to="." method="_on_unstuck_timer_timeout"]

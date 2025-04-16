@@ -42,7 +42,6 @@ func _process(delta: float) -> void:
 		if player_reff.name == "Player":
 			if player_reff.right_press == true && enter_pipe == false:
 				enter_pipe = true
-				print(pipe_name)
 				in_the_pipe()
 				
 
@@ -88,6 +87,7 @@ func _on_ou_the_pipe_timer_timeout() -> void:
 	player_reff_transion.in_pipe_transit = false
 	player_reff_transion.input_freeze = false
 	player_reff_transion.right_press = false
+	player_reff_transion.z_index= 0
 	player_reff_transion = null
 	player_reff = null
 	

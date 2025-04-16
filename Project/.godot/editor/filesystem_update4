@@ -9,3 +9,14 @@ res://door.tscn
 res://SetPieces/Bridge/TimeGate.tscn
 res://SetPieces/Bridge/time_gate.gd
 res://CRT.gdshader
+res://bg.tscn
+res://SetPieces/Platform/moving_platform.tscn
+res://Collectables/coin.tscn
+res://SetPieces/Platform/pipe_right.gd
+res://SetPieces/Platform/pipe_up.gd
+res://SetPieces/Platform/pipe_left.gd
+res://SetPieces/Platform/pipe_down.gd
+res://Shaders/FireFlame.gdshader
+res://Shaders/chest.tscn
+res://Rainbow.gdshader
+res://Shaders/FireWork.gdshader

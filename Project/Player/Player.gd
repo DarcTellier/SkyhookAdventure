@@ -17,10 +17,6 @@ var cayote_count= 0
 @export var right_press = false
 
 var in_pipe_transit = false
-
-
-
-#TODO move these 3 to it's own script / do state machine
 var two_way_platform = false
 
 
@@ -37,10 +33,6 @@ func _physics_process(delta):
 	cayote_time()
 	player_input()
 	
-	
-	
-	
-		
 
 func player_input():
 	if input_freeze == false:
@@ -90,7 +82,7 @@ func jump_input():
 func update_gravity(delta):
 	# Add the gravity.
 	if not is_on_floor():
-		velocity.y += gravity * delta
+		velocity.y += gravity* delta
 		
 		
 func cayote_time():
