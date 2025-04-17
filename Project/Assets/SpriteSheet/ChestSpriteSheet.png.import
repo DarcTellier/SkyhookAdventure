@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mqk3uvp8xj73"
-path="res://.godot/imported/CommonClearChesOpen.png-4fdd38918c1ecb1b0a36f5390c88ad43.ctex"
+uid="uid://dgs6bk7ykdhry"
+path="res://.godot/imported/ChestSpriteSheet.png-08ad4604b20bf39361e3be2d8ff06b33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/CommonClearChesOpen.png"
-dest_files=["res://.godot/imported/CommonClearChesOpen.png-4fdd38918c1ecb1b0a36f5390c88ad43.ctex"]
+source_file="res://Assets/SpriteSheet/ChestSpriteSheet.png"
+dest_files=["res://.godot/imported/ChestSpriteSheet.png-08ad4604b20bf39361e3be2d8ff06b33.ctex"]
 
 [params]
 

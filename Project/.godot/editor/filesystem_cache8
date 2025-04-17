@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744772424
-bg.tscn::PackedScene::8703348760994529008::1744772423::0::1::::<><>::
+::res://::1744850969
+bg.tscn::PackedScene::8703348760994529008::1744850969::0::1::::<><>::
+CRT.gdshader::Shader::-1::1744850969::0::1::::<><>::
 DonutDropBlock.tscn::PackedScene::8625583322492341276::1744738902::0::1::::<><>::res://donut_drop_block.gd<>uid://dh0bg0eo8yens::::res://donut_platform.tscn
 donut_drop_block.gd::GDScript::-1::1744600761::0::1::::<>Node2D<>::
 donut_platform.gd::GDScript::-1::1744652984::0::1::::<>RigidBody2D<>::
@@ -10,8 +11,8 @@ door.tscn::PackedScene::2628058332672251466::1744738902::0::1::::<><>::res://doo
 moving_platform.gd::GDScript::-1::1744652060::0::1::::<>Path2D<>::
 pipe.gd::GDScript::-1::1744498025::0::1::::<>StaticBody2D<>::
 pipe.tscn::PackedScene::6891188668135466746::1744508078::0::1::::<><>::res://pipe.gd<>uid://ch08wei0ssrcy::::res://Assets/Art/Orange Pipe.png
+Rainbow.gdshader::Shader::-1::1744780731::0::1::::<><>::
 README.md::TextFile::-1::1744385245::0::1::::<><>::
-CRT.gdshader::Shader::-1::1744772424::0::1::::<><>::
 ::res://addons/::1744386272
 ::res://addons/kanban_tasks/::1744243507
 icon.svg::CompressedTexture2D::2584192313033160869::1744243506::1744243507::1::::<><>::
@@ -80,23 +81,19 @@ start.tscn::PackedScene::2692091061628401710::1744243506::0::1::::<><>::res://ad
 autosize_label.gd::GDScript::-1::1744243506::0::1::::<>Label<>::
 task.gd::GDScript::-1::1744243506::0::1::::<>MarginContainer<>::
 task.tscn::PackedScene::5508831843714498441::1744243506::0::1::::<><>::res://addons/kanban_tasks/view/task/task.gd<>res://addons/kanban_tasks/edit_label/edit_label.gd<>res://addons/kanban_tasks/view/task/autosize_label.gd<>uid://bwi22eyrmeeet::::res://addons/kanban_tasks/view/details/details.tscn<>uid://dwjg5vyxx4g48::::res://addons/kanban_tasks/view/details/step_holder.tscn<>res://addons/kanban_tasks/expand_button/expand_button.gd
-::res://Assets/::1744330675
+::res://Assets/::1744851271
 dragon-warrior-iii.ttf::FontFile::6739448698518927023::1744330639::1744330675::1::::<><>::
 Gear.svg::CompressedTexture2D::7660626933026261259::1743985575::1743985676::1::::<><>::
 icon.svg::CompressedTexture2D::4785779773734377011::1695345683::1695821892::1::::<><>::
 NextIndicatorAnimation.png::CompressedTexture2D::4515313838804193967::1744330639::1744330675::1::::<><>::
 TextBox.png::CompressedTexture2D::3927015414451482630::1744330639::1744330675::1::::<><>::
 TextBoxTail.png::CompressedTexture2D::5312210058803031666::1744330639::1744330675::1::::<><>::
-::res://Assets/Art/::1744779197
+::res://Assets/Art/::1744851251
 Block1.png::CompressedTexture2D::5532518899330874846::1695859070::1695859070::1::::<><>::
 BlueBox.png::CompressedTexture2D::1759778657161315820::1695862714::1695862716::1::::<><>::
 Bridge.png::CompressedTexture2D::6960514181678756490::1695858650::1695858309::1::::<><>::
 bush.png::CompressedTexture2D::6449989931591558952::1744316062::1744316068::1::::<><>::
-Chest.png::CompressedTexture2D::4974708838235895942::1744753359::1744753360::1::::<><>::
 Coin_render.png::CompressedTexture2D::5077038741218325443::1695671075::1695671093::1::::<><>::
-CommonClearChesOpen.png::CompressedTexture2D::875954423512788328::1744779197::1744779198::1::::<><>::
-CommonClearChestClose.png::CompressedTexture2D::2791652869073891216::1744779197::1744779198::1::::<><>::
-CommonWaterChest.png::CompressedTexture2D::2095613565225974558::1744765210::1744765210::1::::<><>::
 Conveyor.png::CompressedTexture2D::4256642242286118110::1695861713::1695861715::1::::<><>::
 DirectionalLift_Down.png::CompressedTexture2D::5613668502366808477::1696124427::1696124437::1::::<><>::
 DirectionalLift_Left.png::CompressedTexture2D::7817771262539842141::1696124374::1696124437::1::::<><>::
@@ -118,6 +115,8 @@ mario firework.wav::AudioStreamWAV::1426968306384398651::1744590942::1744592049:
 Pause.wav::AudioStreamWAV::8343622270905554751::1744428015::1744428025::1::::<><>::
 Pickup_Coin44.wav::AudioStreamWAV::8981404114770650904::1695596634::1695596636::1::::<><>::
 Speech.wav::AudioStreamWAV::5701118306301500875::1744331361::1744331370::1::::<><>::
+::res://Assets/SpriteSheet/::1744851343
+ChestSpriteSheet.png::CompressedTexture2D::7619438500821421614::1744851343::1744851343::1::::<><>::
 ::res://Assets/Tiles/::1744607899
 Brick1.png::CompressedTexture2D::6512032052099658021::1695433049::1695821840::1::::<><>::
 DonutPlatformA.png::CompressedTexture2D::342138903819977720::1744607898::1744607899::1::::<><>::
@@ -143,15 +142,15 @@ interaction_manager.gd::GDScript::-1::1744334173::0::1::::<>Node2D<>::
 ::res://interactions/interaction area/::1744477679
 interaction_area.gd::GDScript::-1::1744402447::0::1::::InteractionArea<>Area2D<>::
 interaction_area.tscn::PackedScene::2324735354918193001::1744477679::0::1::::<><>::res://interactions/interaction area/interaction_area.gd
-::res://Levels/::1744772423
-test_level.tscn::PackedScene::2268406889581559639::1744772423::0::1::::<><>::uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://ck281pk8dgdvi::::res://Assets/Art/Block1.png<>uid://bssllwhv8q114::::res://SetPieces/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://SetPieces/Platform/platform.tscn<>uid://wbg3j0053f3l::::res://Assets/Tiles/Ramp1.png<>uid://cba8ut47w6fbk::::res://Collectables/coin.tscn<>uid://dopskpw7d4vj0::::res://SetPieces/conveyor_belt/conveyor_belt.tscn<>uid://cy1qhmipy7y0t::::res://Assets/Tiles/Brick1.png<>uid://c7e4ko3cvb3uk::::res://Assets/Tiles/Ramp2.png<>uid://dq4sm4bqr0xp1::::res://SetPieces/Elevator/elevator_2.tscn<>uid://d0bhty3pmlimf::::res://SetPieces/Platform/elevatorPlatform.tscn<>uid://44epjlgabjow::::res://Assets/Art/CommonWaterChest.png<>uid://cx5onk7aqr26w::::res://Assets/Art/bush.png<>uid://dwuaep5q40l2r::::res://SetPieces/Platform/platform_one_way_collision.tscn<>uid://qk401y4swsdx::::res://SetPieces/Platform/platform_two_way_collision.tscn<>uid://bflj8qsa6qg7f::::res://SetPieces/Special/white_block.tscn<>uid://btodagme3g01l::::res://SetPieces/Special/super_elevator.tscn<>uid://b1n1ydx3263wb::::res://SetPieces/Special/npc_test.tscn<>uid://cns2gg8y7rotr::::res://SetPieces/Bridge/bridge.tscn<>uid://cj7pifxnlmwbh::::res://SetPieces/Platform/pipe_up.tscn<>uid://ni1bf7mpmqir::::res://SetPieces/Platform/pipe_right.tscn<>uid://2tfhwvoenkcu::::res://SetPieces/Platform/pipe_down.tscn<>uid://ddcrppmnd4fie::::res://SetPieces/Platform/pipe_Left.tscn<>uid://b6gcmwqk40j7y::::res://SetPieces/Platform/moving_platform.tscn<>uid://f74po7k7cr00::::res://SetPieces/Platform/push_wall.tscn<>uid://du5kdkiy4b7yu::::res://DonutDropBlock.tscn<>uid://bdpb0byg62j6a::::res://door.tscn<>uid://dv875agreijqm::::res://bg.tscn<>uid://cc41y0js1rfjy::::res://Assets/Art/Chest.png
-::res://Player/::1744772424
+::res://Levels/::1744850968
+test_level.tscn::PackedScene::2268406889581559639::1744850968::0::1::::<><>::uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://ck281pk8dgdvi::::res://Assets/Art/Block1.png<>uid://bssllwhv8q114::::res://SetPieces/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://SetPieces/Platform/platform.tscn<>uid://wbg3j0053f3l::::res://Assets/Tiles/Ramp1.png<>uid://cba8ut47w6fbk::::res://Collectables/coin.tscn<>uid://dopskpw7d4vj0::::res://SetPieces/conveyor_belt/conveyor_belt.tscn<>uid://cy1qhmipy7y0t::::res://Assets/Tiles/Brick1.png<>uid://c7e4ko3cvb3uk::::res://Assets/Tiles/Ramp2.png<>uid://dq4sm4bqr0xp1::::res://SetPieces/Elevator/elevator_2.tscn<>uid://d0bhty3pmlimf::::res://SetPieces/Platform/elevatorPlatform.tscn<>uid://cx5onk7aqr26w::::res://Assets/Art/bush.png<>uid://dwuaep5q40l2r::::res://SetPieces/Platform/platform_one_way_collision.tscn<>uid://qk401y4swsdx::::res://SetPieces/Platform/platform_two_way_collision.tscn<>uid://bflj8qsa6qg7f::::res://SetPieces/Special/white_block.tscn<>uid://btodagme3g01l::::res://SetPieces/Special/super_elevator.tscn<>uid://b1n1ydx3263wb::::res://SetPieces/Special/npc_test.tscn<>uid://cns2gg8y7rotr::::res://SetPieces/Bridge/bridge.tscn<>uid://cj7pifxnlmwbh::::res://SetPieces/Platform/pipe_up.tscn<>uid://ni1bf7mpmqir::::res://SetPieces/Platform/pipe_right.tscn<>uid://2tfhwvoenkcu::::res://SetPieces/Platform/pipe_down.tscn<>uid://ddcrppmnd4fie::::res://SetPieces/Platform/pipe_Left.tscn<>uid://b6gcmwqk40j7y::::res://SetPieces/Platform/moving_platform.tscn<>uid://f74po7k7cr00::::res://SetPieces/Platform/push_wall.tscn<>uid://du5kdkiy4b7yu::::res://DonutDropBlock.tscn<>uid://bdpb0byg62j6a::::res://door.tscn<>uid://dv875agreijqm::::res://bg.tscn<>uid://1nqtaudb0ijo::::res://Shaders/chest.tscn
+::res://Player/::1744850969
 Camera2D.gd::GDScript::-1::1744159217::0::1::::<>Camera2D<>::
 JUMPER.png::CompressedTexture2D::4293287532075893508::1695433557::1695821807::1::::<><>::
-PipeTransShader.gdshader::Shader::-1::1744772424::0::1::::<><>::
+PipeTransShader.gdshader::Shader::-1::1744850969::0::1::::<><>::
 PlatformerCamera.tscn::PackedScene::2108968177742802010::1744212061::0::1::::<><>::res://Player/Camera2D.gd
 Player.gd::GDScript::-1::1744764801::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5986169877054164323::1744772423::0::1::::<><>::res://Player/Player.gd<>uid://b2fx23cihh3g7::::res://Player/JUMPER.png<>uid://qg13ioj71ekm::::res://Assets/SoundFX/Jump70.wav<>uid://f5narbiaxcmv::::res://UI/input_settings/input_settings.tscn<>res://Player/PipeTransShader.gdshader
+player.tscn::PackedScene::5986169877054164323::1744850968::0::1::::<><>::res://Player/Player.gd<>uid://b2fx23cihh3g7::::res://Player/JUMPER.png<>uid://qg13ioj71ekm::::res://Assets/SoundFX/Jump70.wav<>uid://f5narbiaxcmv::::res://UI/input_settings/input_settings.tscn<>res://Player/PipeTransShader.gdshader
 stuck_in_wall_solution.gd::GDScript::-1::1744663020::0::1::::<>Node2D<>::
 ::res://Scenes/::1744251388
 main.gd::GDScript::-1::1743978442::0::1::::<>Node2D<>::
@@ -163,12 +162,12 @@ world_1.tscn::PackedScene::7024045794211472351::1744212542::0::1::::<><>::uid://
 ::res://SetPieces/::1744313776
 ::res://SetPieces/Ball/::1744220214
 ball_test.tscn::PackedScene::583203509572001742::1744220214::0::1::::<><>::
-::res://SetPieces/Bridge/::1744772423
+::res://SetPieces/Bridge/::1744850969
 bridge.gd::GDScript::-1::1744578668::0::1::::<>Node2D<>::
 bridge.tscn::PackedScene::5724105575074367511::1744647148::0::1::::<><>::res://SetPieces/Bridge/bridge.gd<>uid://c6fywfjuqwdh7::::res://Assets/Art/Bridge.png
 CRT_Shaders.tscn::PackedScene::5258040613484760647::1744674947::0::1::::<><>::res://CRT.gdshader
+TimeGate.tscn::PackedScene::9035719981363122656::1744850969::0::1::::<><>::res://SetPieces/Bridge/time_gate.gd<>uid://c6fywfjuqwdh7::::res://Assets/Art/Bridge.png
 time_gate.gd::GDScript::-1::1744772423::0::1::::<>Node2D<>::
-TimeGate.tscn::PackedScene::9035719981363122656::1744772423::0::1::::<><>::res://SetPieces/Bridge/time_gate.gd<>uid://c6fywfjuqwdh7::::res://Assets/Art/Bridge.png
 ::res://SetPieces/conveyor_belt/::1744156184
 conveyor.gd::GDScript::-1::1743978442::0::1::::<>AnimatableBody2D<>::
 conveyor.tscn::PackedScene::7925134343924996067::1744156184::0::1::::<><>::res://SetPieces/conveyor_belt/conveyor.gd<>uid://b1v7jm4d4q1d7::::res://Assets/Art/Conveyor.png
@@ -188,9 +187,9 @@ elevator_platform.tscn::PackedScene::3777588736366296018::1744316610::0::1::::<>
 ::res://SetPieces/OrbitingPlatform/::1744651948
 OrbitingPlatform.gd::GDScript::-1::1744651948::0::1::::<>Node2D<>::
 orbiting_platform.tscn::PackedScene::3687667366730381801::1744252036::0::1::::<><>::res://SetPieces/OrbitingPlatform/OrbitingPlatform.gd<>uid://2rtj2344w1e::::res://Assets/Art/OrbitingPlatformBlock.png
-::res://SetPieces/Platform/::1744772423
+::res://SetPieces/Platform/::1744850968
 elevatorPlatform.tscn::PackedScene::8916507773330667317::1744487072::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
-moving_platform.tscn::PackedScene::4574805147233531220::1744772423::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
+moving_platform.tscn::PackedScene::4574805147233531220::1744850968::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
 pipe_down.gd::GDScript::-1::1744754207::0::1::::<>StaticBody2D<>::
 pipe_down.tscn::PackedScene::1934639229671736488::1744510801::0::1::::<><>::res://SetPieces/Platform/pipe_down.gd<>uid://ch08wei0ssrcy::::res://Assets/Art/Orange Pipe.png
 pipe_left.gd::GDScript::-1::1744754191::0::1::::<>StaticBody2D<>::
@@ -216,6 +215,12 @@ super_elevator.tscn::PackedScene::3749092486248031187::1744651775::0::1::::<><>:
 white_block.gd::GDScript::-1::1744648818::0::1::::<>StaticBody2D<>::
 white_block.tscn::PackedScene::2760679309533825357::1744648818::0::1::::<><>::res://SetPieces/Special/white_block.gd<>uid://j76rjtvk8y7n::::res://Assets/Tiles/WhiteBlock.png
 ::res://SetPieces/WindmillBlades/::1744212277
+::res://Shaders/::1744850969
+chest.tscn::PackedScene::1852752278394798616::1744850969::0::1::::<><>::uid://mqk3uvp8xj73::::res://Assets/Art/CommonClearChesOpen.png<>uid://bf1kd52tbv6q3::::res://Assets/Art/CommonClearChestClose.png<>res://Shaders/FireWork.gdshader
+FireFlame.gdshader::Shader::-1::1744850969::0::1::::<><>::
+FireWork.gdshader::Shader::-1::1744850969::0::1::::<><>::
+Rainbow.gdshader::Shader::-1::1744850969::0::1::::<><>::
+Stripes.gdshader::Shader::-1::1744850969::0::1::::<><>::
 ::res://UI/::1744386744
 text_box.gd::GDScript::-1::1744330550::0::1::::<>MarginContainer<>::
 ::res://UI/input_settings/::1744477679
