@@ -9,8 +9,9 @@ func _on_body_entered(body: Node2D) -> void:
 		player_reff = body
 
 func _on_body_exited(body: Node2D) -> void:
-	player_reff.get_node("Ladder").exit_ladder()
-	player_reff = null
+	if player_reff != null:
+		player_reff.get_node("Ladder").exit_ladder()
+		player_reff = null
 	
 	
 

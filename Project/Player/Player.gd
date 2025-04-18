@@ -101,6 +101,9 @@ func cayote_time():
 			is_jump = false
 
 
+
+
+
 func regular_inputs():
 	if Input.is_action_pressed("down"):
 		down_press = true

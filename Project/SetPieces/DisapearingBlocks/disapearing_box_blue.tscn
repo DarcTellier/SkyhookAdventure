@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00su1"]
 size = Vector2(16, 16)
 
-[node name="DisapearingBoxOrange" type="Node2D"]
+[node name="DisapearingBoxBlue" type="Node2D"]
 script = ExtResource("1_fdj8m")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

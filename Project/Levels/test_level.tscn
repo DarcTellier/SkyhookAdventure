@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=4 uid="uid://7k3lhsnyvtjr"]
+[gd_scene load_steps=60 format=4 uid="uid://7k3lhsnyvtjr"]
 
 [ext_resource type="PackedScene" uid="uid://crj0lw3pyxu1h" path="res://Player/player.tscn" id="1_4k50d"]
 [ext_resource type="Texture2D" uid="uid://ck281pk8dgdvi" path="res://Assets/Art/Block1.png" id="2_3158n"]
@@ -29,6 +29,9 @@
 [ext_resource type="PackedScene" uid="uid://dv875agreijqm" path="res://bg.tscn" id="26_pcblp"]
 [ext_resource type="PackedScene" uid="uid://1nqtaudb0ijo" path="res://Shaders/chest.tscn" id="28_k7ebw"]
 [ext_resource type="PackedScene" uid="uid://b8saykbb2iney" path="res://ladder.tscn" id="29_6tabg"]
+[ext_resource type="PackedScene" uid="uid://b755igrpchp1b" path="res://SetPieces/DirectionalLift/directional_lift.tscn" id="30_3uao1"]
+[ext_resource type="PackedScene" uid="uid://kbo3iwxuwrwy" path="res://SetPieces/DisapearingBlocks/disapearing_box_blue.tscn" id="32_g6ttx"]
+[ext_resource type="PackedScene" uid="uid://c4rr8c7swlrik" path="res://SetPieces/DisapearingBlocks/disapearing_box_orange.tscn" id="33_xrj21"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_7hwld"]
 size = Vector2(10000, 5000)
@@ -502,40 +505,40 @@ position = Vector2(-976, 2672)
 position = Vector2(0, -2344)
 
 [node name="ElevatorPlatform" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -200)
+position = Vector2(0, -1212)
 
 [node name="ElevatorPlatform2" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -396)
+position = Vector2(0, -1407.33)
 
 [node name="ElevatorPlatform3" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -592)
+position = Vector2(0, -1602.67)
 
 [node name="ElevatorPlatform4" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -786)
+position = Vector2(0, -1798)
 
 [node name="ElevatorPlatform5" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -982)
+position = Vector2(0, -1993.33)
 
 [node name="ElevatorPlatform6" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -1178)
+position = Vector2(0, -2188.67)
 
 [node name="ElevatorPlatform7" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -1372)
+position = Vector2(0, -38)
 
 [node name="ElevatorPlatform8" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -1568)
+position = Vector2(0, -234)
 
 [node name="ElevatorPlatform9" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -1764)
+position = Vector2(0, -430)
 
 [node name="ElevatorPlatform10" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -1958)
+position = Vector2(0, -624)
 
 [node name="ElevatorPlatform11" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -2154)
+position = Vector2(0, -820)
 
 [node name="ElevatorPlatform12" parent="Elevator2" instance=ExtResource("9_cn5b1")]
-position = Vector2(0, -4)
+position = Vector2(0, -1016)
 
 [node name="ConveyorBelt" parent="." instance=ExtResource("4_4t6x8")]
 z_index = -2
@@ -546,22 +549,22 @@ position = Vector2(304, 184)
 rotation_duration = 3.0
 
 [node name="Platform" parent="OrbitingPlatform" instance=ExtResource("3_3158n")]
-position = Vector2(-69.4658, -71.934)
+position = Vector2(-69.4658, 71.934)
 
 [node name="Platform_one_way_collision2" parent="OrbitingPlatform" instance=ExtResource("10_tc6tp")]
-position = Vector2(46.9472, -88.2948)
+position = Vector2(-89.8794, -43.8371)
 script = SubResource("GDScript_lrol0")
 
 [node name="Platform_one_way_collision3" parent="OrbitingPlatform" instance=ExtResource("10_tc6tp")]
-position = Vector2(98.4808, 17.3648)
+position = Vector2(13.9173, -99.0268)
 script = SubResource("GDScript_lrol0")
 
 [node name="Platform_one_way_collision4" parent="OrbitingPlatform" instance=ExtResource("10_tc6tp")]
-position = Vector2(13.9173, 99.0268)
+position = Vector2(98.4808, -17.3648)
 script = SubResource("GDScript_lrol0")
 
 [node name="Platform_one_way_collision5" parent="OrbitingPlatform" instance=ExtResource("10_tc6tp")]
-position = Vector2(-89.8794, 43.8371)
+position = Vector2(46.9472, 88.2948)
 script = SubResource("GDScript_lrol0")
 
 [node name="OneWayPlatforms" type="Node2D" parent="."]
@@ -730,7 +733,6 @@ position = Vector2(-1608, -288)
 curve = SubResource("Curve2D_g6ttx")
 script = SubResource("GDScript_xrj21")
 speed = 0.2
-direction = false
 
 [node name="MovingPlatform6" parent="MovingPlatforms" instance=ExtResource("22_y77ci")]
 position = Vector2(-1608, -288)
@@ -761,6 +763,16 @@ loot = "2 PACKS OF  PIZZA POPS"
 
 [node name="Ladder" parent="." instance=ExtResource("29_6tabg")]
 position = Vector2(1504, 367)
+
+[node name="DirectionalLift" parent="." instance=ExtResource("30_3uao1")]
+position = Vector2(1500, 216)
+
+[node name="DisapearingBoxOrange2" parent="." instance=ExtResource("32_g6ttx")]
+position = Vector2(1512, 152)
+count = 30
+
+[node name="DisapearingBoxOrange3" parent="." instance=ExtResource("33_xrj21")]
+position = Vector2(1432, 176)
 
 [editable path="Elevator2"]
 [editable path="SuperElevator"]

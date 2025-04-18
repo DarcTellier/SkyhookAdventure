@@ -57,9 +57,4 @@ func open_chest():
 		is_open = true
 		$LootDialogue/Control/Panel/VBoxContainer/VBoxContainer2/LOOT.text = loot
 		$LootDialogue.show()
-		$LootDialogueTimer.start()
 	
-
-
-#func _on_loot_dialogue_timer_timeout() -> void:
-	#$LootDialogue.hide()

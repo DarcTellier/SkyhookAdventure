@@ -29,6 +29,7 @@ InteractionManager="*res://interactions/InteractionManager.tscn"
 PauseScreen="*res://Globals/Pause_Screen.tscn"
 GPipeNetwork="*res://Globals/GPipeNetwork.gd"
 GDoorNetwork="*res://Globals/GDoorNetwork.gd"
+ConfigFileHandler="*res://Globals/ConfigFileHandler.gd"
 
 [display]
 
