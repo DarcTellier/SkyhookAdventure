@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 # Hinkel Dinkheimer
 
 @export var SPEED = 300.0
@@ -8,9 +9,13 @@ extends CharacterBody2D
 @export var cayote_Time = 10
 var cayote_count= 0
 
+@export var default_movevent = true
+@export var ladder_movement = false
+
 @export var input_freeze = false
-@export var jump = false
+@export var is_jump = false
 @export var duck_jump_height = 2
+
 @export var up_press = false
 @export var down_press = false
 @export var left_press = false
@@ -18,10 +23,12 @@ var cayote_count= 0
 
 var in_pipe_transit = false
 var two_way_platform = false
+var turn_off_gravity = false
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var default_gravity  = ProjectSettings.get_setting("physics/2d/default_gravity")
+var gravity = default_gravity
 
 
 func _ready() -> void:
@@ -37,69 +44,62 @@ func _physics_process(delta):
 func player_input():
 	if input_freeze == false:
 		jump_input()
-		movement_input()
+		switchboard()
 		regular_inputs()
 
 
-func movement_input():
-	
-	var direction = Input.get_axis("left", "right")
-	if direction <0:
-		$Sprite.flip_h = true
-	elif direction >0 :
-		$Sprite.flip_h = false
-	
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x,horizontal_velocity, SPEED) 
-
-	move_and_slide()
+func switchboard():
+	if default_movevent == true:
+		$Movement.movement_input()
+	if ladder_movement == true:
+		$Ladder.movement_input()
+		
+	 
 
 
 func jump_input():
 
 	#2wayPlatforms
-	if Input.is_action_pressed("down")&&Input.is_action_just_pressed("jump")&& jump == true && two_way_platform == true:
+	if Input.is_action_pressed("down")&&Input.is_action_just_pressed("jump")&& is_jump == true && two_way_platform == true:
 		position.y+=1
 		$AudioStreamPlayer2D.play()
 		return
 	#small jump
-	if Input.is_action_pressed("down")&&Input.is_action_just_pressed("jump")&& jump == true:
+	if Input.is_action_pressed("down")&&Input.is_action_just_pressed("jump")&& is_jump == true:
 		velocity.y = JUMP_VELOCITY / duck_jump_height
 		$AudioStreamPlayer2D.play()
 		return	
 	
 	
 	# Handle Jump.
-	if Input.is_action_just_pressed("jump")&& jump == true :  
-		velocity.y = JUMP_VELOCITY
-		$AudioStreamPlayer2D.play()
+	if Input.is_action_just_pressed("jump")&& is_jump == true :  
+		jump()
+
+func jump():
+	velocity.y = JUMP_VELOCITY
+	$AudioStreamPlayer2D.play()
 
 
-		
+
+	
+	
 
 func update_gravity(delta):
 	# Add the gravity.
-	if not is_on_floor():
+	if not is_on_floor ():
 		velocity.y += gravity* delta
 		
 		
 func cayote_time():
 	if is_on_floor() == true:
-		jump = true
+		is_jump = true
 		cayote_count = 0
 	
 	else:
 		cayote_count += 1
 		if cayote_count >= cayote_Time:
-			jump = false
-			pass
-		
+			is_jump = false
 
-
-
-	
 
 func regular_inputs():
 	if Input.is_action_pressed("down"):

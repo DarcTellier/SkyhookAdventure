@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8saykbb2iney"]
+
+[ext_resource type="Texture2D" uid="uid://cl7hi2o61lc17" path="res://Assets/Art/Ladder.png" id="1_cq4ai"]
+[ext_resource type="Script" path="res://ladder.gd" id="1_lqhsa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqhsa"]
+size = Vector2(32, 89)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_efw3x"]
+size = Vector2(32, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3kgug"]
+size = Vector2(32, 2)
+
+[node name="Ladder" type="Area2D"]
+z_index = -1
+script = ExtResource("1_lqhsa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4.5)
+shape = SubResource("RectangleShape2D_lqhsa")
+
+[node name="Ladder" type="Sprite2D" parent="."]
+texture = ExtResource("1_cq4ai")
+
+[node name="center_of_lader" type="Marker2D" parent="."]
+
+[node name="TopOfLadder" type="StaticBody2D" parent="."]
+position = Vector2(0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopOfLadder"]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_efw3x")
+one_way_collision = true
+
+[node name="TopOfLadderArea" type="Area2D" parent="."]
+position = Vector2(0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopOfLadderArea"]
+position = Vector2(0, -49)
+shape = SubResource("RectangleShape2D_3kgug")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="body_entered" from="TopOfLadderArea" to="." method="_on_top_of_ladder_area_body_entered"]
+[connection signal="body_exited" from="TopOfLadderArea" to="." method="_on_top_of_ladder_area_body_exited"]

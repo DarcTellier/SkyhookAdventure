@@ -15,14 +15,14 @@ rotation = 1.5708
 script = ExtResource("1_krim8")
 schedule_windows = Array[Dictionary]([{
 "close": {
-"hour": 1,
-"minute": 41,
+"hour": 3,
+"minute": 16,
 "second": 0
 },
 "open": {
-"hour": 1,
-"minute": 40,
-"second": 45
+"hour": 3,
+"minute": 15,
+"second": 0
 }
 }, {
 "close": {
@@ -36,7 +36,6 @@ schedule_windows = Array[Dictionary]([{
 "second": 0
 }
 }])
-override_enabled = true
 
 [node name="AGate" type="Node2D" parent="."]
 position = Vector2(-46, 0)

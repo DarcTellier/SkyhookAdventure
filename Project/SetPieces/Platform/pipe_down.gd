@@ -31,7 +31,7 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("down"):
 		down_press = true
-		print(down_press)
+		
 
 func _process(delta: float) -> void:
 	
