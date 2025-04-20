@@ -14,8 +14,8 @@ ControlsRemap/action_list=Array[StringName]([&"ui_up", &"ui_down", &"ui_left", &
 
 [application]
 
-config/name="Skypark"
-run/main_scene="res://Levels/test_level.tscn"
+config/name="The Great Cave Escape"
+run/main_scene="res://Levels/world.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://Assets/icon.svg"
 
@@ -35,6 +35,7 @@ ConfigFileHandler="*res://Globals/ConfigFileHandler.gd"
 
 window/size/always_on_top=true
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
@@ -94,6 +95,11 @@ pause={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":6,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
+lol={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":true,"shift_pressed":false,"ctrl_pressed":true,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194335,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
 
 [layer_names]
 
@@ -109,3 +115,4 @@ pause={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

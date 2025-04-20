@@ -1,10 +1,59 @@
 [gd_scene load_steps=6 format=3 uid="uid://b8saykbb2iney"]
 
-[ext_resource type="Texture2D" uid="uid://cl7hi2o61lc17" path="res://Assets/Art/Ladder.png" id="1_cq4ai"]
-[ext_resource type="Script" path="res://ladder.gd" id="1_lqhsa"]
+[sub_resource type="GDScript" id="GDScript_qe38t"]
+script/source = "extends Area2D
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqhsa"]
-size = Vector2(32, 89)
+var player_reff = null
+var on_top_of_ladder = false
+
+func _on_body_entered(body: Node2D) -> void:
+	
+	if body.name == (\"Player\"):
+		player_reff = body
+
+func _on_body_exited(body: Node2D) -> void:
+	if player_reff != null:
+		player_reff.get_node(\"Ladder\").exit_ladder()
+		player_reff = null
+	
+	
+
+
+func _input(event: InputEvent) -> void:
+	if player_reff != null && player_reff.name == \"Player\":
+		
+		if event.is_action_pressed(\"up\"):
+			if on_top_of_ladder == true:
+				return
+			else:
+				player_reff.get_node(\"Ladder\").enter_ladder($center_of_lader.global_position)	
+		
+		
+		if  event.is_action_pressed(\"down\") :
+			if on_top_of_ladder == true:
+				player_reff.position.y +=1
+				
+			player_reff.get_node(\"Ladder\").enter_ladder($center_of_lader.global_position)
+			
+
+
+func _on_top_of_ladder_area_body_entered(body: Node2D) -> void:
+	
+	if body.name == (\"Player\"):
+		on_top_of_ladder = true
+		
+
+
+func _on_top_of_ladder_area_body_exited(body: Node2D) -> void:
+	if body.name == (\"Player\"):
+		on_top_of_ladder = false
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cq4ai"]
+size = Vector2(32, 97)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lqhsa"]
+load_path = "res://.godot/imported/Ladder.png-f996aa427a76ac56a58903e81073a951.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_efw3x"]
 size = Vector2(32, 0)
@@ -14,14 +63,14 @@ size = Vector2(32, 2)
 
 [node name="Ladder" type="Area2D"]
 z_index = -1
-script = ExtResource("1_lqhsa")
+script = SubResource("GDScript_qe38t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4.5)
-shape = SubResource("RectangleShape2D_lqhsa")
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_cq4ai")
 
 [node name="Ladder" type="Sprite2D" parent="."]
-texture = ExtResource("1_cq4ai")
+texture = SubResource("CompressedTexture2D_lqhsa")
 
 [node name="center_of_lader" type="Marker2D" parent="."]
 

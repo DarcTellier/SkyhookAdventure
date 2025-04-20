@@ -1,12 +1,12 @@
-res://Globals
+res://SetPieces/Platform
 res://
+res://Levels
+res://Globals
 res://Shaders
 res://SetPieces/Bridge
-res://SetPieces/Platform
 res://UI/input_settings
 res://SetPieces/Special
 res://interactions
 res://Assets
 res://SetPieces/OrbitingPlatform
-res://Levels
 res://Scenes/World1

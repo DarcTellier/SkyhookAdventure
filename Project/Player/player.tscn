@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://crj0lw3pyxu1h"]
+[gd_scene load_steps=22 format=3 uid="uid://crj0lw3pyxu1h"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_a2mvl"]
 [ext_resource type="Script" path="res://Player/movement.gd" id="2_fhl08"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://Player/ladder.gd" id="3_vtle1"]
 [ext_resource type="PackedScene" uid="uid://f5narbiaxcmv" path="res://UI/input_settings/input_settings.tscn" id="4_gwnis"]
 [ext_resource type="Shader" path="res://Player/PipeTransShader.gdshader" id="5_k53q1"]
+[ext_resource type="Texture2D" uid="uid://ctwruo6y2l5nj" path="res://Assets/light2dmask.png" id="8_od3ui"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufdn7"]
 size = Vector2(7, 25)
@@ -248,6 +249,8 @@ shader = ExtResource("5_k53q1")
 shader_parameter/progress = 0.0
 shader_parameter/diamondPixelSize = 10.0
 
+[sub_resource type="QuadMesh" id="QuadMesh_00tjw"]
+
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 texture_filter = 1
 collision_layer = 11
@@ -300,5 +303,16 @@ process_mode = 3
 visible = false
 
 [node name="InputSettings" parent="CanvasLayer" instance=ExtResource("4_gwnis")]
+
+[node name="EyeWhite" type="MeshInstance2D" parent="."]
+z_index = 10
+position = Vector2(1.5, -8)
+scale = Vector2(1, 2)
+mesh = SubResource("QuadMesh_00tjw")
+
+[node name="PointLight2D" type="PointLight2D" parent="EyeWhite"]
+energy = 0.35
+texture = ExtResource("8_od3ui")
+texture_scale = 0.01
 
 [connection signal="timeout" from="UnstuckTimer" to="." method="_on_unstuck_timer_timeout"]

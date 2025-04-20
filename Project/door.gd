@@ -37,4 +37,5 @@ func _process(delta: float) -> void:
 		
 		
 
-	
+func unlock_door():
+	$LockedDoor.visible = false

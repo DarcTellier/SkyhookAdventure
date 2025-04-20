@@ -15,14 +15,14 @@ rotation = 1.5708
 script = ExtResource("1_krim8")
 schedule_windows = Array[Dictionary]([{
 "close": {
-"hour": 3,
-"minute": 16,
-"second": 0
+"hour": 6,
+"minute": 43,
+"second": 50
 },
 "open": {
-"hour": 3,
-"minute": 15,
-"second": 0
+"hour": 6,
+"minute": 43,
+"second": 45
 }
 }, {
 "close": {

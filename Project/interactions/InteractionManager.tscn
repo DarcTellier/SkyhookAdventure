@@ -7,7 +7,7 @@ script = ExtResource("1_u2e4y")
 
 [node name="Label" type="Label" parent="."]
 visible = false
-z_index = 20
+z_index = 100
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5

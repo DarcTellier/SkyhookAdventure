@@ -4,7 +4,7 @@ var player_reff = null
 var on_top_of_ladder = false
 
 func _on_body_entered(body: Node2D) -> void:
-	
+	print("pizza")
 	if body.name == ("Player"):
 		player_reff = body
 
@@ -18,7 +18,7 @@ func _on_body_exited(body: Node2D) -> void:
 
 func _input(event: InputEvent) -> void:
 	if player_reff != null && player_reff.name == "Player":
-		print(on_top_of_ladder)
+		
 		if event.is_action_pressed("up"):
 			if on_top_of_ladder == true:
 				return
@@ -35,7 +35,7 @@ func _input(event: InputEvent) -> void:
 
 
 func _on_top_of_ladder_area_body_entered(body: Node2D) -> void:
-	print(on_top_of_ladder)
+	
 	if body.name == ("Player"):
 		on_top_of_ladder = true
 		
