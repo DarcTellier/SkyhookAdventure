@@ -2,9 +2,10 @@
 extends StaticBody2D
 @onready var interaction_area: InteractionArea = $InteractionArea
 
-
+@export var treasure = "key"
+@export var add_to_inventory = false
 @export var is_open = false
-@export var loot = ""
+@export var loot_text = ""
 
 @export_enum("COMMON","RARE") var rarity = 0
 @export_enum(
@@ -55,6 +56,9 @@ func open_chest():
 	if is_open == false:
 		$ChestSpriteSheet.frame+= 1
 		is_open = true
-		$LootDialogue/Control/Panel/VBoxContainer/VBoxContainer2/LOOT.text = loot
+		$LootDialogue/Control/Panel/VBoxContainer/VBoxContainer2/LOOT.text = loot_text
 		$LootDialogue.show()
+		if add_to_inventory == true:
+			GPlayer.inventory_insert(treasure)
+		
 	

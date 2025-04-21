@@ -1,5 +1,6 @@
 extends Area2D
-
+var collected = false
+@export var value = 1
 var animation_speed = 2
 var animation_count = 0
 
@@ -16,10 +17,14 @@ func _process(_delta):
 
 
 
-func _on_body_entered(_body):
-	$AudioStreamPlayer2D.play()
-	visible = false
-	$CollisionShape2D.disabled = true
+func _on_body_entered(body):
+	if body.name!= null:
+		if body.name == "Player" && collected == false:
+			collected = true
+			GPlayer.coins += value
+			$AudioStreamPlayer2D.play()
+			visible = false
+			$CollisionShape2D.disabled = true
 	
 
 

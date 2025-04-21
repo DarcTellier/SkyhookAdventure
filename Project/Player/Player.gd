@@ -36,10 +36,11 @@ func _ready() -> void:
 	GPipeNetwork.emergency_player_reff = self # fix issue with pipe not getting player refference on pipe body enter. 
 
 func _physics_process(delta):
+	
 	update_gravity(delta)
 	cayote_time()
 	player_input()
-	
+	GPlayer.current_elevation(global_position.y) # level on display 
 
 func player_input():
 	if input_freeze == false:

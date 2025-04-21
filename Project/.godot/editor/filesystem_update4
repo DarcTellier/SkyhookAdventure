@@ -19,3 +19,17 @@ res://SetPieces/Platform/PicknicTable.tscn
 res://SetPieces/Platform/picknic_table.gd
 res://door.tscn
 res://door.gd
+res://UI/UIDisplay/ui_display.tscn
+res://UI/UIDisplay/ui_display.gd
+res://Globals/GPlayer.gd
+res://Collectables/coin.gd
+res://Player/Player.gd
+res://Levels/display.gd
+res://vending_machine_ui.gd
+res://vending_machine.gd
+res://SetPieces/Special/npc_test.tscn
+res://Collectables/coin.tscn
+res://Globals/QuitGame.gd
+res://Shaders/chest.gd
+res://locked_door.tscn
+res://locked_door.gd

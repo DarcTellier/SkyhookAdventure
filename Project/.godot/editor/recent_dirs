@@ -1,7 +1,8 @@
-res://SetPieces/Platform
 res://
-res://Levels
 res://Globals
+res://UI/UIDisplay
+res://SetPieces/Platform
+res://Levels
 res://Shaders
 res://SetPieces/Bridge
 res://UI/input_settings
