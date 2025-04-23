@@ -6,8 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://qg13ioj71ekm" path="res://Assets/SoundFX/Jump70.wav" id="3_awb2x"]
 [ext_resource type="Script" path="res://Player/ladder.gd" id="3_vtle1"]
 [ext_resource type="PackedScene" uid="uid://f5narbiaxcmv" path="res://UI/input_settings/input_settings.tscn" id="4_gwnis"]
-[ext_resource type="Shader" path="res://Player/PipeTransShader.gdshader" id="5_k53q1"]
-[ext_resource type="Texture2D" uid="uid://ctwruo6y2l5nj" path="res://Assets/light2dmask.png" id="8_od3ui"]
+[ext_resource type="Shader" path="res://Shaders/PipeTransShader.gdshader" id="5_k53q1"]
+[ext_resource type="Texture2D" uid="uid://ctwruo6y2l5nj" path="res://Assets/LightMask/light2dmask.png" id="8_od3ui"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufdn7"]
 size = Vector2(7, 25)

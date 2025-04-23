@@ -29,7 +29,10 @@
 				"7e0fe21c-d64f-41d1-99cf-e7d210f7943d",
 				"8e48ff26-f1c9-4a2d-b69b-39a95082f41a",
 				"c4d11d90-e375-40fc-ba0f-18ac46be40ad",
-				"5b6b8a1e-a85f-4a8f-b31a-3d4da249f993"
+				"5b6b8a1e-a85f-4a8f-b31a-3d4da249f993",
+				"c01f20c4-adcd-42ef-8b71-e15c82b24687",
+				"b67b0d97-796e-4c5d-833c-2b2ad8627e3e",
+				"9318f267-c4b6-4d5a-a13a-26acf8164b03"
 			]
 		},
 		{
@@ -304,6 +307,27 @@
 			"uuid": "5b6b8a1e-a85f-4a8f-b31a-3d4da249f993",
 			"title": "SURVEYOR SPRAY PAINT ON THE WALL:",
 			"description": "“SEA LEVEL”\n→ Arrow pointing at the floor\n🖌️ “Congratulations. You’re halfway there.”\n🖌️ “Now the real climb begins.”\n\n\nPeep:\n\n“W-we’re still underground?! B-but I packed a towel for the beach!”\n“I thought 0 meant FREEDOM!!”\n\nWant to include some fake graffiti from previous climbers like:\n\n“Sea level my butt.”\n“I saw the sky once… in a fever dream.”\n“-0m club. No t-shirts. Just trauma.”",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "c01f20c4-adcd-42ef-8b71-e15c82b24687",
+			"title": "Solid platform",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "b67b0d97-796e-4c5d-833c-2b2ad8627e3e",
+			"title": "OnlydownPlatforms",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "9318f267-c4b6-4d5a-a13a-26acf8164b03",
+			"title": "Create slides",
+			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []
 		}

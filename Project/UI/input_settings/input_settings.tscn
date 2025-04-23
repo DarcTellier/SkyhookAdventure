@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://802essrggkbm" path="res://UI/input_settings/input_button.tscn" id="1_7hnln"]
 [ext_resource type="Script" path="res://UI/input_settings/input_settings.gd" id="1_s43l6"]
-[ext_resource type="FontFile" uid="uid://c3av0ae5wkxr8" path="res://Assets/dragon-warrior-iii.ttf" id="3_yfp18"]
+[ext_resource type="FontFile" uid="uid://c3av0ae5wkxr8" path="res://Assets/Fonts/dragon-warrior-iii.ttf" id="3_yfp18"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cu3nh"]
 bg_color = Color(0.024, 0, 0.72, 0.839216)

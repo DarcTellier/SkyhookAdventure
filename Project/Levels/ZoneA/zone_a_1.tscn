@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=4 uid="uid://urwglsrgh5cx"]
+[gd_scene load_steps=5 format=4 uid="uid://urwglsrgh5cx"]
 
-[ext_resource type="TileSet" uid="uid://67tq3smik2hp" path="res://Levels/test_level.tres" id="1_4egy7"]
+[ext_resource type="TileSet" uid="uid://67tq3smik2hp" path="res://Levels/TestArea/test_level.tres" id="1_4egy7"]
 [ext_resource type="PackedScene" uid="uid://crj0lw3pyxu1h" path="res://Player/player.tscn" id="2_75hxk"]
+[ext_resource type="PackedScene" uid="uid://ph3l25s200yp" path="res://GameMechanics/Special/push_test.tscn" id="3_75hxk"]
+[ext_resource type="PackedScene" uid="uid://ikrjn0kuf183" path="res://GameMechanics/Ball/ball_test.tscn" id="4_o1ggd"]
 
 [node name="ZoneA-1" type="Node2D"]
 
@@ -17,3 +19,9 @@ cayote_Time = 20
 position = Vector2(0, -120.5)
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
+
+[node name="PushTest" parent="." instance=ExtResource("3_75hxk")]
+position = Vector2(576, 606)
+
+[node name="BallTest" parent="." instance=ExtResource("4_o1ggd")]
+position = Vector2(448, 544)

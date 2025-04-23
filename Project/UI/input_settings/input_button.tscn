@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://802essrggkbm"]
 
-[ext_resource type="FontFile" uid="uid://c3av0ae5wkxr8" path="res://Assets/dragon-warrior-iii.ttf" id="1_ftn40"]
+[ext_resource type="FontFile" uid="uid://c3av0ae5wkxr8" path="res://Assets/Fonts/dragon-warrior-iii.ttf" id="1_ftn40"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hujnq"]
 bg_color = Color(0.943972, 0.306519, 0.745068, 1)

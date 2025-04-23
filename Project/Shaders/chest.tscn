@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Shaders/chest.gd" id="1_qxfws"]
 [ext_resource type="PackedScene" uid="uid://8eeb0x7kjhqf" path="res://interactions/interaction area/interaction_area.tscn" id="2_p35t7"]
 [ext_resource type="Script" path="res://Shaders/loot_dialogue.gd" id="4_7wfk8"]
-[ext_resource type="FontFile" uid="uid://c3av0ae5wkxr8" path="res://Assets/dragon-warrior-iii.ttf" id="4_rlpy2"]
+[ext_resource type="FontFile" uid="uid://c3av0ae5wkxr8" path="res://Assets/Fonts/dragon-warrior-iii.ttf" id="4_rlpy2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p35t7"]
 size = Vector2(32, 26)
