@@ -48,7 +48,7 @@ func _process(delta):
 
 
 func get_player_position():
-	player_position = get_parent().global_position
+	player_position = get_parent().get_node("Player").global_position
 	
  
 

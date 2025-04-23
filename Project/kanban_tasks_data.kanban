@@ -11,27 +11,24 @@
 			"uuid": "3c73aebb-6b77-4faf-9bfa-e4bfe5d4e4d2",
 			"title": "Todo",
 			"tasks": [
-				"584bb648-9fd9-420f-a968-0af52261de17",
-				"a849b3b1-5076-408f-82ee-d310be981166",
 				"db99e767-30b3-46ce-b2df-00e2f303e5e2",
+				"a849b3b1-5076-408f-82ee-d310be981166",
 				"c4151983-efe3-4271-9fa4-5cb5cc1a2fa1",
 				"66e0ef7f-92a5-489d-88bb-6be0fa84849f",
 				"f935b255-4a43-4469-9951-dce19314360c",
 				"e5f43404-8be4-4eb2-8333-1de4f3af6171",
 				"0cd01409-b013-4713-bfe8-c550d4b201a2",
 				"457ea2b5-ca9c-4e54-b4c9-7f6ffefdd21f",
+				"8e48ff26-f1c9-4a2d-b69b-39a95082f41a",
 				"d3c3cb8c-3d89-4207-860f-2f3837babc2e",
 				"e36b46af-bb49-47bb-8208-5a9dbbab0316",
-				"e84d8b99-30e3-437d-b4f6-10a3c8ddbd4c",
 				"a855bef9-caae-4ffc-b668-b3b246df7f83",
+				"b67b0d97-796e-4c5d-833c-2b2ad8627e3e",
 				"0b997293-c044-4408-8ae5-d794da8598e4",
 				"c110b449-9870-4452-9ff6-43dff9f1fe74",
 				"7e0fe21c-d64f-41d1-99cf-e7d210f7943d",
-				"8e48ff26-f1c9-4a2d-b69b-39a95082f41a",
 				"c4d11d90-e375-40fc-ba0f-18ac46be40ad",
 				"5b6b8a1e-a85f-4a8f-b31a-3d4da249f993",
-				"c01f20c4-adcd-42ef-8b71-e15c82b24687",
-				"b67b0d97-796e-4c5d-833c-2b2ad8627e3e",
 				"9318f267-c4b6-4d5a-a13a-26acf8164b03"
 			]
 		},
@@ -40,13 +37,17 @@
 			"title": "Doing",
 			"tasks": [
 				"ae415a72-6a78-4776-bd4a-bf94266f67b7",
-				"f6b54d09-9164-4115-a965-c83312595aed"
+				"f6b54d09-9164-4115-a965-c83312595aed",
+				"1624cb51-12dc-49b2-9331-db4070a5de11"
 			]
 		},
 		{
 			"uuid": "ac5c2b6b-2961-422f-a1a9-82991b6fcfc6",
 			"title": "Done",
 			"tasks": [
+				"45d21b18-9c40-4fe7-9de1-874d786acc3f",
+				"c01f20c4-adcd-42ef-8b71-e15c82b24687",
+				"e84d8b99-30e3-437d-b4f6-10a3c8ddbd4c",
 				"fa132509-ad1c-44de-b0c4-14b7e01615b6",
 				"9c758cf7-0d3a-4ba6-95cb-be2cfd8e86ed",
 				"de325c40-676c-4725-81e5-0f6e5a3d5479",
@@ -109,7 +110,7 @@
 		},
 		{
 			"uuid": "a849b3b1-5076-408f-82ee-d310be981166",
-			"title": "mario3 type inventory",
+			"title": "inventory",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []
@@ -228,7 +229,7 @@
 		},
 		{
 			"uuid": "e84d8b99-30e3-437d-b4f6-10a3c8ddbd4c",
-			"title": "scrolling level ",
+			"title": "scrolling camera",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []
@@ -262,13 +263,6 @@
 			"steps": []
 		},
 		{
-			"uuid": "584bb648-9fd9-420f-a968-0af52261de17",
-			"title": "convert to  states machine for movement ?",
-			"description": "",
-			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
-			"steps": []
-		},
-		{
 			"uuid": "0b997293-c044-4408-8ae5-d794da8598e4",
 			"title": "Imstuck Bro ",
 			"description": "",
@@ -277,7 +271,7 @@
 		},
 		{
 			"uuid": "c110b449-9870-4452-9ff6-43dff9f1fe74",
-			"title": "ImStuckBro Skit",
+			"title": "ImStuckBro Skit with owl",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []
@@ -299,7 +293,7 @@
 		{
 			"uuid": "c4d11d90-e375-40fc-ba0f-18ac46be40ad",
 			"title": "Spining room ",
-			"description": "",
+			"description": " castle vanian 4  \n",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []
 		},
@@ -327,6 +321,20 @@
 		{
 			"uuid": "9318f267-c4b6-4d5a-a13a-26acf8164b03",
 			"title": "Create slides",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "1624cb51-12dc-49b2-9331-db4070a5de11",
+			"title": "Static camera /pause bug",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "45d21b18-9c40-4fe7-9de1-874d786acc3f",
+			"title": "one way wall ",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []

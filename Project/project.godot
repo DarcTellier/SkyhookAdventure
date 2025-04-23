@@ -35,8 +35,8 @@ GPlayer="*res://Globals/GPlayer.gd"
 [display]
 
 window/size/always_on_top=true
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
 
 [editor_plugins]
 
@@ -127,6 +127,7 @@ select={
 2d_physics/layer_1="Walls/Blocks"
 2d_physics/layer_2="interaction"
 2d_physics/layer_4="Collectables"
+2d_physics/layer_11="RoomCamera"
 2d_physics/layer_12="StuckinsideColision"
 
 [physics]

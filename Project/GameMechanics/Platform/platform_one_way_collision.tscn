@@ -8,6 +8,7 @@ size = Vector2(64, 16)
 
 [node name="Platform_one_way_collision" type="AnimatableBody2D" groups=["platforms"]]
 modulate = Color(0, 0.883333, 1, 1)
+position = Vector2(8, 0)
 script = ExtResource("1_ufoom")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

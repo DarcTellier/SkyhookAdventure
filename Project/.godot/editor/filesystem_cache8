@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745378260
+::res://::1745384152
 README.md::TextFile::-1::1744385245::0::1::::<><>::
 ::res://addons/::1744386272
 ::res://addons/kanban_tasks/::1744243507
@@ -71,7 +71,7 @@ task.gd::GDScript::-1::1744243506::0::1::::<>MarginContainer<>::
 task.tscn::PackedScene::5508831843714498441::1744243506::0::1::::<><>::res://addons/kanban_tasks/view/task/task.gd<>res://addons/kanban_tasks/edit_label/edit_label.gd<>res://addons/kanban_tasks/view/task/autosize_label.gd<>uid://bwi22eyrmeeet::::res://addons/kanban_tasks/view/details/details.tscn<>uid://dwjg5vyxx4g48::::res://addons/kanban_tasks/view/details/step_holder.tscn<>res://addons/kanban_tasks/expand_button/expand_button.gd
 ::res://Assets/::1745373229
 icon.svg::CompressedTexture2D::4785779773734377011::1695345683::1695821892::1::::<><>::
-::res://Assets/Art/::1745373229
+::res://Assets/Art/::1745388971
 Block1.png::CompressedTexture2D::5532518899330874846::1695859070::1695859070::1::::<><>::
 BlueBox.png::CompressedTexture2D::1759778657161315820::1695862714::1695862716::1::::<><>::
 Bridge.png::CompressedTexture2D::6960514181678756490::1695858650::1695858309::1::::<><>::
@@ -88,6 +88,7 @@ Ladder.png::CompressedTexture2D::5611419482036469748::1744869111::1744869112::1:
 LockedDoor.png::CompressedTexture2D::4883840357634018945::1745146727::1745146728::1::::<><>::
 NegativeSpacePlaceBlack.png::CompressedTexture2D::8838317091676082594::1696173116::1696173119::1::::<><>::
 NegativeSpacePlacer.png::CompressedTexture2D::8675914181126450671::1696172236::1696172238::1::::<><>::
+OneWay.png::CompressedTexture2D::4962602125305020852::1745388971::1745388971::1::::<><>::
 Orange Pipe.png::CompressedTexture2D::5317815888543626992::1744430908::1744430908::1::::<><>::
 OrangeBox.png::CompressedTexture2D::8359432249236252059::1695862614::1695862716::1::::<><>::
 OrbitingPlatformBlock.png::CompressedTexture2D::56804834052819144::1695690654::1695690654::1::::<><>::
@@ -129,12 +130,15 @@ UI_Inventory.png::CompressedTexture2D::3912612993545422105::1745191244::17453730
 ::res://Collectables/Coins/::1745377483
 coin.gd::GDScript::-1::1745376793::0::1::::<>Area2D<>::
 coin.tscn::PackedScene::4845070631891163736::1745377483::0::1::::<><>::res://Collectables/Coins/coin.gd<>uid://celmc61cdrkbb::::res://Assets/Art/Coin_render.png<>uid://d07wocc8osah1::::res://Assets/SoundFX/Pickup_Coin44.wav
-::res://GameMechanics/::1745378213
+::res://GameMechanics/::1745387680
 ::res://GameMechanics/4DirectionalLift/::1745374684
 directional_lift.gd::GDScript::-1::1696126056::0::1::::<>AnimatableBody2D<>::
 directional_lift.tscn::PackedScene::4696231150952437033::1745374684::0::1::::<><>::res://GameMechanics/4DirectionalLift/directional_lift.gd<>uid://cl8kkg4287s2p::::res://Assets/Art/DirectionalLift_Down.png<>uid://djm8sym8pmf0h::::res://Assets/Art/DirectionalLift_Left.png<>uid://cb4etvrnn1c0e::::res://Assets/Art/DirectionalLift_Right.png<>uid://brm1h1nt3t1q4::::res://Assets/Art/DirectionalLift_UP.png
 ::res://GameMechanics/Ball/::1745377139
 ball_test.tscn::PackedScene::583203509572001742::1745377139::0::1::::<><>::
+::res://GameMechanics/Chests/::1745384152
+chest.gd::GDScript::-1::1745376793::0::1::::<>StaticBody2D<>::
+chest.tscn::PackedScene::1852752278394798616::1745384152::0::1::::<><>::uid://dgs6bk7ykdhry::::res://Assets/SpriteSheet/ChestSpriteSheet.png<>res://GameMechanics/Chests/chest.gd<>uid://8eeb0x7kjhqf::::res://interactions/interaction area/interaction_area.tscn<>res://Shaders/loot_dialogue.gd<>uid://c3av0ae5wkxr8::::res://Assets/Fonts/dragon-warrior-iii.ttf
 ::res://GameMechanics/conveyor_belt/::1745374684
 conveyor.gd::GDScript::-1::1743978442::0::1::::<>AnimatableBody2D<>::
 conveyor.tscn::PackedScene::7925134343924996067::1745374684::0::1::::<><>::res://GameMechanics/conveyor_belt/conveyor.gd<>uid://b1v7jm4d4q1d7::::res://Assets/Art/Conveyor.png
@@ -144,14 +148,13 @@ DisapearingBox.gd::GDScript::-1::1695863842::0::1::::<>Node2D<>::
 disapearing_box.tscn::PackedScene::676871366463684186::1745374684::0::1::::<><>::res://GameMechanics/DisapearingBlocks/DisapearingBox.gd<>uid://drdmvl0x5yhnf::::res://Assets/Art/OrangeBox.png
 disapearing_box_blue.tscn::PackedScene::704853309507576088::1745374684::0::1::::<><>::res://GameMechanics/DisapearingBlocks/DisapearingBox.gd<>uid://0cpkd1daoqoa::::res://Assets/Art/BlueBox.png
 disapearing_box_orange.tscn::PackedScene::6844503530112179798::1745374684::0::1::::<><>::res://GameMechanics/DisapearingBlocks/DisapearingBox.gd<>uid://drdmvl0x5yhnf::::res://Assets/Art/OrangeBox.png
-::res://GameMechanics/Doors/::1745377138
+::res://GameMechanics/Doors/::1745382432
 door.gd::GDScript::-1::1745376793::0::1::::<>Node2D<>::
-door.tscn::PackedScene::2628058332672251466::1745377138::0::1::::<><>::res://GameMechanics/Doors/door.gd<>uid://cbt1ewsvpstav::::res://Assets/Art/LockedDoor.png<>res://GameMechanics/Doors/locked_door.gd<>uid://8eeb0x7kjhqf::::res://interactions/interaction area/interaction_area.tscn
+door.tscn::PackedScene::2628058332672251466::1745382432::0::1::::<><>::res://GameMechanics/Doors/door.gd<>uid://cbt1ewsvpstav::::res://Assets/Art/LockedDoor.png<>res://GameMechanics/Doors/locked_door.gd<>uid://8eeb0x7kjhqf::::res://interactions/interaction area/interaction_area.tscn
 locked_door.gd::GDScript::-1::1745376793::0::1::::<>Sprite2D<>::
 locked_door.tscn::PackedScene::1586311938799394773::1745376535::0::1::::<><>::uid://cbt1ewsvpstav::::res://Assets/Art/LockedDoor.png<>uid://bdpb0byg62j6a::::res://GameMechanics/Doors/door.tscn
-::res://GameMechanics/Elevator_Skip/::1745378260
+::res://GameMechanics/Elevator_Skip/::1745378372
 elevatorPlatform.tscn::PackedScene::8916507773330667317::1745377141::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
-elevator_platform.tscn::PackedScene::3795577792386403033::1745377140::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
 elevator_skip.gd::GDScript::-1::1745376793::0::1::::<>Node2D<>::
 elevator_skip.tscn::PackedScene::8343266365024862732::1745378235::0::1::::<><>::res://GameMechanics/Elevator_Skip/elevator_skip.gd
 ::res://GameMechanics/Ladders/::1745377141
@@ -160,6 +163,12 @@ ladder.tscn::PackedScene::4739854709235115172::1745377141::0::1::::<><>::
 ::res://GameMechanics/Moving_Path_Platform/::1745377141
 moving_platform.gd::GDScript::-1::1744652060::0::1::::<>Path2D<>::
 moving_platform.tscn::PackedScene::4574805147233531220::1745377141::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
+::res://GameMechanics/OneWayWall/::1745389923
+one_way_wall.tscn::PackedScene::4346493559198784973::1745389188::0::1::::<><>::uid://ccx6lj0ker5wi::::res://Assets/Art/OneWay.png
+Down_one_way_wall.tscn::PackedScene::1428778244452031181::1745389483::0::1::::<><>::uid://ccx6lj0ker5wi::::res://Assets/Art/OneWay.png
+Left_one_way_wall.tscn::PackedScene::8840473959141739320::1745389923::0::1::::<><>::uid://ccx6lj0ker5wi::::res://Assets/Art/OneWay.png
+Right_one_way_wall.tscn::PackedScene::1002447806602001807::1745389880::0::1::::<><>::uid://ccx6lj0ker5wi::::res://Assets/Art/OneWay.png
+Up_one_way_wall.tscn::PackedScene::8748501031230527179::1745389658::0::1::::<><>::uid://ccx6lj0ker5wi::::res://Assets/Art/OneWay.png
 ::res://GameMechanics/OrbitingPlatform/::1745377141
 OrbitingPlatform.gd::GDScript::-1::1744651948::0::1::::<>Node2D<>::
 orbiting_platform.tscn::PackedScene::3687667366730381801::1745377141::0::1::::<><>::res://GameMechanics/OrbitingPlatform/OrbitingPlatform.gd<>uid://2rtj2344w1e::::res://Assets/Art/OrbitingPlatformBlock.png
@@ -176,16 +185,17 @@ pipe_up.tscn::PackedScene::5471526388254252145::1745375151::0::1::::<><>::res://
 ::res://GameMechanics/Pipes/OldPipeMarkForClearing/::1745375654
 pipe.gd::GDScript::-1::1744498025::0::1::::<>StaticBody2D<>::
 pipe.tscn::PackedScene::6891188668135466746::1745375654::0::1::::<><>::res://GameMechanics/Pipes/OldPipeMarkForClearing/pipe.gd<>uid://ch08wei0ssrcy::::res://Assets/Art/Orange Pipe.png
-::res://GameMechanics/Platform/::1745375548
+::res://GameMechanics/Platform/::1745387424
 platform_one_way_collision.gd::GDScript::-1::1744472051::0::1::::<>AnimatableBody2D<>::
-platform_one_way_collision.tscn::PackedScene::8744712144333932139::1745374684::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png<>res://GameMechanics/Platform/platform_one_way_collision.gd
+platform_one_way_collision.tscn::PackedScene::8744712144333932139::1745387424::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png<>res://GameMechanics/Platform/platform_one_way_collision.gd
+platform_solid.tscn::PackedScene::2986566306505900470::1745387424::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
 platform_two_way_collision.gd::GDScript::-1::1744650415::0::1::::<>AnimatableBody2D<>::
-platform_two_way_collision.tscn::PackedScene::1145472117411942453::1745374684::0::1::::<><>::uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png<>res://GameMechanics/Platform/platform_two_way_collision.gd
-::res://GameMechanics/Platform/DonutDropPlatform/::1745375573
-DonutDropBlock.tscn::PackedScene::8625583322492341276::1745375573::0::1::::<><>::res://GameMechanics/Platform/DonutDropPlatform/donut_drop_block.gd<>uid://dh0bg0eo8yens::::res://GameMechanics/Platform/DonutDropPlatform/donut_platform.tscn
+Platform_two_way_collision.tscn::PackedScene::1145472117411942453::1745387424::0::1::::<><>::res://GameMechanics/Platform/platform_two_way_collision.gd<>uid://bcw08eqr5l11a::::res://Assets/Art/Platform.png
+::res://GameMechanics/Platform/DonutDropPlatform/::1745382433
+DonutDropBlock.tscn::PackedScene::8625583322492341276::1745382433::0::1::::<><>::res://GameMechanics/Platform/DonutDropPlatform/donut_drop_block.gd<>uid://dh0bg0eo8yens::::res://GameMechanics/Platform/DonutDropPlatform/donut_platform.tscn
 donut_drop_block.gd::GDScript::-1::1744600761::0::1::::<>Node2D<>::
-donut_platform.gd::GDScript::-1::1744652984::0::1::::<>RigidBody2D<>::
-donut_platform.tscn::PackedScene::7702266152097334764::1745375573::0::1::::<><>::res://GameMechanics/Platform/DonutDropPlatform/donut_platform.gd<>uid://e4y8ij3jphpw::::res://Assets/Tiles/DonutPlatformA.png<>uid://s4fe02nmladj::::res://Assets/Tiles/DonutPlatformB.png
+donut_platform.gd::GDScript::-1::1745381815::0::1::::<>RigidBody2D<>::
+donut_platform.tscn::PackedScene::7702266152097334764::1745382433::0::1::::<><>::res://GameMechanics/Platform/DonutDropPlatform/donut_platform.gd<>uid://e4y8ij3jphpw::::res://Assets/Tiles/DonutPlatformA.png<>uid://s4fe02nmladj::::res://Assets/Tiles/DonutPlatformB.png
 ::res://GameMechanics/Props/::1745376793
 PicknicTable.tscn::PackedScene::4325589197857996027::1745375328::0::1::::<><>::res://GameMechanics/Props/picknic_table.gd<>uid://nupb10adknad::::res://Assets/Art/PicnicTable.png
 picknic_table.gd::GDScript::-1::1745376793::0::1::::<>StaticBody2D<>::
@@ -225,23 +235,24 @@ interaction_manager.gd::GDScript::-1::1744334173::0::1::::<>Node2D<>::
 ::res://interactions/interaction area/::1745376793
 interaction_area.gd::GDScript::-1::1745376793::0::1::::InteractionArea<>Area2D<>::
 interaction_area.tscn::PackedScene::2324735354918193001::1745092114::0::1::::<><>::res://interactions/interaction area/interaction_area.gd
-::res://Levels/::1745377189
-StartArea.tscn::PackedScene::7338680719366364550::1745377189::0::1::::<><>::uid://67tq3smik2hp::::res://Levels/TestArea/test_level.tres<>uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://b8saykbb2iney::::res://GameMechanics/Ladders/ladder.tscn<>uid://csq35e8hvervq::::res://Assets/Art/Ladder2.png<>uid://ctwruo6y2l5nj::::res://Assets/LightMask/light2dmask.png<>uid://dgl5og0jfxw5s::::res://Setpieces/PowerBox/powerbox.tscn<>uid://c0dgyne1w1lkd::::res://Setpieces/VendingMachine/vending_machine.tscn<>uid://b2vl27mkf0wnr::::res://GameMechanics/Props/PicknicTable.tscn<>uid://1nqtaudb0ijo::::res://Shaders/chest.tscn<>uid://bdpb0byg62j6a::::res://GameMechanics/Doors/door.tscn<>res://UI/UIDisplay/displayBox.gd<>uid://bv8p007xrba71::::res://UI/UIDisplay/ui_display.tscn
-world.tscn::PackedScene::7806826334318206656::1745377138::0::1::::<><>::uid://dcs588ewfa2pm::::res://Levels/StartArea.tscn
-::res://Levels/TestArea/::1745378260
+::res://Levels/::1745392337
+StartArea.tscn::PackedScene::7338680719366364550::1745392337::0::1::::<><>::uid://67tq3smik2hp::::res://Levels/TestArea/test_level.tres<>uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://b8saykbb2iney::::res://GameMechanics/Ladders/ladder.tscn<>uid://csq35e8hvervq::::res://Assets/Art/Ladder2.png<>uid://ctwruo6y2l5nj::::res://Assets/LightMask/light2dmask.png<>uid://dgl5og0jfxw5s::::res://Setpieces/PowerBox/powerbox.tscn<>uid://c0dgyne1w1lkd::::res://Setpieces/VendingMachine/vending_machine.tscn<>uid://b2vl27mkf0wnr::::res://GameMechanics/Props/PicknicTable.tscn<>uid://1nqtaudb0ijo::::res://GameMechanics/Chests/chest.tscn<>uid://bdpb0byg62j6a::::res://GameMechanics/Doors/door.tscn<>res://UI/UIDisplay/displayBox.gd<>uid://bv8p007xrba71::::res://UI/UIDisplay/ui_display.tscn
+world.tscn::PackedScene::7806826334318206656::1745392337::0::1::::<><>::uid://dcs588ewfa2pm::::res://Levels/StartArea.tscn
+::res://Levels/TestArea/::1745390068
 bg.tscn::PackedScene::8703348760994529008::1745377139::0::1::::<><>::
-test_level.tres::TileSet::2243097935490581689::1745377483::0::1::::<><>::uid://ck281pk8dgdvi::::res://Assets/Art/Block1.png<>uid://wbg3j0053f3l::::res://Assets/Tiles/Ramp1.png<>uid://cy1qhmipy7y0t::::res://Assets/Tiles/Brick1.png<>uid://c7e4ko3cvb3uk::::res://Assets/Tiles/Ramp2.png<>uid://cba8ut47w6fbk::::res://Collectables/Coins/coin.tscn<>uid://du5kdkiy4b7yu::::res://GameMechanics/Platform/DonutDropPlatform/DonutDropBlock.tscn<>uid://b8saykbb2iney::::res://GameMechanics/Ladders/ladder.tscn<>uid://cx5onk7aqr26w::::res://Assets/Art/bush.png
-test_level.tscn::PackedScene::2268406889581559639::1745378260::0::1::::<><>::uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://67tq3smik2hp::::res://Levels/TestArea/test_level.tres<>uid://bssllwhv8q114::::res://GameMechanics/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://GameMechanics/OrbitingPlatform/platform.tscn<>uid://dopskpw7d4vj0::::res://GameMechanics/conveyor_belt/conveyor_belt.tscn<>uid://dq4sm4bqr0xp1::::res://GameMechanics/Elevator_Skip/elevator_skip.tscn<>uid://d0bhty3pmlimf::::res://GameMechanics/Elevator_Skip/elevatorPlatform.tscn<>uid://dwuaep5q40l2r::::res://GameMechanics/Platform/platform_one_way_collision.tscn<>uid://qk401y4swsdx::::res://GameMechanics/Platform/platform_two_way_collision.tscn<>uid://bflj8qsa6qg7f::::res://GameMechanics/Special/white_block.tscn<>uid://btodagme3g01l::::res://GameMechanics/Special/super_elevator.tscn<>uid://b1n1ydx3263wb::::res://GameMechanics/Special/npc_test.tscn<>uid://cns2gg8y7rotr::::res://GameMechanics/RTM/TimeBridge/bridge.tscn<>uid://cj7pifxnlmwbh::::res://GameMechanics/Pipes/pipe_up.tscn<>uid://ni1bf7mpmqir::::res://GameMechanics/Pipes/pipe_right.tscn<>uid://2tfhwvoenkcu::::res://GameMechanics/Pipes/pipe_down.tscn<>uid://ddcrppmnd4fie::::res://GameMechanics/Pipes/pipe_Left.tscn<>uid://b6gcmwqk40j7y::::res://GameMechanics/Moving_Path_Platform/moving_platform.tscn<>uid://f74po7k7cr00::::res://GameMechanics/Wall_pushing/push_wall.tscn<>uid://du5kdkiy4b7yu::::res://GameMechanics/Platform/DonutDropPlatform/DonutDropBlock.tscn<>uid://bdpb0byg62j6a::::res://GameMechanics/Doors/door.tscn<>uid://dv875agreijqm::::res://Levels/TestArea/bg.tscn<>uid://1nqtaudb0ijo::::res://Shaders/chest.tscn<>uid://b8saykbb2iney::::res://GameMechanics/Ladders/ladder.tscn<>uid://b755igrpchp1b::::res://GameMechanics/4DirectionalLift/directional_lift.tscn<>uid://kbo3iwxuwrwy::::res://GameMechanics/DisapearingBlocks/disapearing_box_blue.tscn<>uid://c4rr8c7swlrik::::res://GameMechanics/DisapearingBlocks/disapearing_box_orange.tscn
-::res://Levels/ZoneA/::1745377138
-zone_a_1.tscn::PackedScene::1440218389528016651::1745377138::0::1::::<><>::uid://67tq3smik2hp::::res://Levels/TestArea/test_level.tres<>uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://ph3l25s200yp::::res://GameMechanics/Special/push_test.tscn<>uid://ikrjn0kuf183::::res://GameMechanics/Ball/ball_test.tscn
-::res://Player/::1745377139
+test_level.tres::TileSet::2243097935490581689::1745390068::0::1::::<><>::uid://ck281pk8dgdvi::::res://Assets/Art/Block1.png<>uid://wbg3j0053f3l::::res://Assets/Tiles/Ramp1.png<>uid://cy1qhmipy7y0t::::res://Assets/Tiles/Brick1.png<>uid://c7e4ko3cvb3uk::::res://Assets/Tiles/Ramp2.png<>uid://cba8ut47w6fbk::::res://Collectables/Coins/coin.tscn<>uid://du5kdkiy4b7yu::::res://GameMechanics/Platform/DonutDropPlatform/DonutDropBlock.tscn<>uid://b8saykbb2iney::::res://GameMechanics/Ladders/ladder.tscn<>uid://cx5onk7aqr26w::::res://Assets/Art/bush.png<>uid://dwuaep5q40l2r::::res://GameMechanics/Platform/platform_one_way_collision.tscn<>uid://qk401y4swsdx::::res://GameMechanics/Platform/Platform_two_way_collision.tscn<>uid://bisyktg0qg8c5::::res://GameMechanics/Platform/platform_solid.tscn<>uid://umd1e5m481pp::::res://GameMechanics/OneWayWall/Down_one_way_wall.tscn<>uid://dwv3sfc7xmf0v::::res://GameMechanics/OneWayWall/Up_one_way_wall.tscn<>uid://dx7nkxtasjry3::::res://GameMechanics/OneWayWall/Left_one_way_wall.tscn<>uid://ojuf0jbtit8r::::res://GameMechanics/OneWayWall/Right_one_way_wall.tscn
+test_level.tscn::PackedScene::2268406889581559639::1745384152::0::1::::<><>::uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://67tq3smik2hp::::res://Levels/TestArea/test_level.tres<>uid://bssllwhv8q114::::res://GameMechanics/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://GameMechanics/OrbitingPlatform/platform.tscn<>uid://dopskpw7d4vj0::::res://GameMechanics/conveyor_belt/conveyor_belt.tscn<>uid://dq4sm4bqr0xp1::::res://GameMechanics/Elevator_Skip/elevator_skip.tscn<>uid://d0bhty3pmlimf::::res://GameMechanics/Elevator_Skip/elevatorPlatform.tscn<>uid://dwuaep5q40l2r::::res://GameMechanics/Platform/platform_one_way_collision.tscn<>uid://qk401y4swsdx::::res://GameMechanics/Platform/Platform_two_way_collision.tscn<>uid://bflj8qsa6qg7f::::res://GameMechanics/Special/white_block.tscn<>uid://btodagme3g01l::::res://GameMechanics/Special/super_elevator.tscn<>uid://b1n1ydx3263wb::::res://GameMechanics/Special/npc_test.tscn<>uid://cns2gg8y7rotr::::res://GameMechanics/RTM/TimeBridge/bridge.tscn<>uid://cj7pifxnlmwbh::::res://GameMechanics/Pipes/pipe_up.tscn<>uid://ni1bf7mpmqir::::res://GameMechanics/Pipes/pipe_right.tscn<>uid://2tfhwvoenkcu::::res://GameMechanics/Pipes/pipe_down.tscn<>uid://ddcrppmnd4fie::::res://GameMechanics/Pipes/pipe_Left.tscn<>uid://b6gcmwqk40j7y::::res://GameMechanics/Moving_Path_Platform/moving_platform.tscn<>uid://f74po7k7cr00::::res://GameMechanics/Wall_pushing/push_wall.tscn<>uid://du5kdkiy4b7yu::::res://GameMechanics/Platform/DonutDropPlatform/DonutDropBlock.tscn<>uid://bdpb0byg62j6a::::res://GameMechanics/Doors/door.tscn<>uid://dv875agreijqm::::res://Levels/TestArea/bg.tscn<>uid://1nqtaudb0ijo::::res://GameMechanics/Chests/chest.tscn<>uid://b8saykbb2iney::::res://GameMechanics/Ladders/ladder.tscn<>uid://b755igrpchp1b::::res://GameMechanics/4DirectionalLift/directional_lift.tscn<>uid://kbo3iwxuwrwy::::res://GameMechanics/DisapearingBlocks/disapearing_box_blue.tscn<>uid://c4rr8c7swlrik::::res://GameMechanics/DisapearingBlocks/disapearing_box_orange.tscn
+::res://Levels/ZoneA/::1745392337
+static_cam.gd::GDScript::-1::1745392646::0::1::::<>Camera2D<>::
+zone_a_1.tscn::PackedScene::1440218389528016651::1745392658::0::1::::<><>::uid://67tq3smik2hp::::res://Levels/TestArea/test_level.tres<>uid://crj0lw3pyxu1h::::res://Player/player.tscn<>uid://bdpb0byg62j6a::::res://GameMechanics/Doors/door.tscn<>res://Levels/ZoneA/static_cam.gd<>uid://1nqtaudb0ijo::::res://GameMechanics/Chests/chest.tscn<>uid://dq4sm4bqr0xp1::::res://GameMechanics/Elevator_Skip/elevator_skip.tscn<>uid://d0bhty3pmlimf::::res://GameMechanics/Elevator_Skip/elevatorPlatform.tscn
+::res://Player/::1745392337
 Camera2D.gd::GDScript::-1::1744159217::0::1::::<>Camera2D<>::
 JUMPER.png::CompressedTexture2D::4293287532075893508::1695433557::1695821807::1::::<><>::
 ladder.gd::GDScript::-1::1744941188::0::1::::<>Node<>::
 movement.gd::GDScript::-1::1744935996::0::1::::<>Node<>::
-PlatformerCamera.tscn::PackedScene::2108968177742802010::1745377139::0::1::::<><>::res://Player/Camera2D.gd
+PlatformerCamera.tscn::PackedScene::2108968177742802010::1745392337::0::1::::<><>::res://Player/Camera2D.gd
 Player.gd::GDScript::-1::1745376793::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::5986169877054164323::1745377138::0::1::::<><>::res://Player/Player.gd<>res://Player/movement.gd<>uid://b2fx23cihh3g7::::res://Player/JUMPER.png<>uid://qg13ioj71ekm::::res://Assets/SoundFX/Jump70.wav<>res://Player/ladder.gd<>uid://f5narbiaxcmv::::res://UI/input_settings/input_settings.tscn<>res://Shaders/PipeTransShader.gdshader<>uid://ctwruo6y2l5nj::::res://Assets/LightMask/light2dmask.png
+player.tscn::PackedScene::5986169877054164323::1745389546::0::1::::<><>::res://Player/Player.gd<>res://Player/movement.gd<>uid://b2fx23cihh3g7::::res://Player/JUMPER.png<>uid://qg13ioj71ekm::::res://Assets/SoundFX/Jump70.wav<>res://Player/ladder.gd<>uid://f5narbiaxcmv::::res://UI/input_settings/input_settings.tscn<>res://Shaders/PipeTransShader.gdshader<>uid://ctwruo6y2l5nj::::res://Assets/LightMask/light2dmask.png
 stuck_in_wall_solution.gd::GDScript::-1::1744663020::0::1::::<>Node2D<>::
 ::res://playerstatemachine_NOT IN USE/::1745374645
 base_states.gd::GDScript::-1::1744932301::0::1::::PlayerState<>Node<>::
@@ -251,9 +262,9 @@ jump.gd::GDScript::-1::1744932385::0::1::::<>PlayerState<>::
 move.gd::GDScript::-1::1744932385::0::1::::<>PlayerState<>::
 player.gd::GDScript::-1::1744932837::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::2597934983025090871::1745374645::0::1::::<><>::res://playerstatemachine_NOT IN USE/player.gd<>res://playerstatemachine_NOT IN USE/base_states.gd<>res://playerstatemachine_NOT IN USE/idle.gd<>res://playerstatemachine_NOT IN USE/move.gd<>res://playerstatemachine_NOT IN USE/jump.gd<>res://playerstatemachine_NOT IN USE/fall.gd<>uid://b2fx23cihh3g7::::res://Player/JUMPER.png<>uid://qg13ioj71ekm::::res://Assets/SoundFX/Jump70.wav
-::res://Scenes/::1745378213
+::res://Scenes/::1745378310
 main.gd::GDScript::-1::1743978442::0::1::::<>Node2D<>::
-main.tscn::PackedScene::6461329282633601035::1745378213::0::1::::<><>::res://Scenes/main.gd<>uid://crj0lw3pyxu1h::::res://Player/player.tscn<>res://SetPieces/Bridge/bridge.tscn<>uid://dopskpw7d4vj0::::res://GameMechanics/conveyor_belt/conveyor_belt.tscn<>uid://bucuu2eino06x::::res://GameMechanics/Elevator_Skip/elevator_platform.tscn<>uid://cba8ut47w6fbk::::res://Collectables/Coins/coin.tscn<>uid://c4rr8c7swlrik::::res://GameMechanics/DisapearingBlocks/disapearing_box_orange.tscn<>uid://kbo3iwxuwrwy::::res://GameMechanics/DisapearingBlocks/disapearing_box_blue.tscn<>uid://bssllwhv8q114::::res://GameMechanics/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://GameMechanics/OrbitingPlatform/platform.tscn<>uid://5bunr2xo7vta::::res://Player/PlatformerCamera.tscn<>res://event_trigger.tscn<>uid://0akonjc8ebem::::res://Assets/Interactables/interactables.tscn<>uid://b755igrpchp1b::::res://GameMechanics/4DirectionalLift/directional_lift.tscn
+main.tscn::PackedScene::6461329282633601035::1745378310::0::1::::<><>::res://Scenes/main.gd<>uid://crj0lw3pyxu1h::::res://Player/player.tscn<>res://SetPieces/Bridge/bridge.tscn<>uid://dopskpw7d4vj0::::res://GameMechanics/conveyor_belt/conveyor_belt.tscn<>uid://bucuu2eino06x::::res://GameMechanics/Elevator_Skip/elevator_platform_MarkForDELETE.tscn<>uid://cba8ut47w6fbk::::res://Collectables/Coins/coin.tscn<>uid://c4rr8c7swlrik::::res://GameMechanics/DisapearingBlocks/disapearing_box_orange.tscn<>uid://kbo3iwxuwrwy::::res://GameMechanics/DisapearingBlocks/disapearing_box_blue.tscn<>uid://bssllwhv8q114::::res://GameMechanics/OrbitingPlatform/orbiting_platform.tscn<>uid://lbkaoij5gdtj::::res://GameMechanics/OrbitingPlatform/platform.tscn<>uid://5bunr2xo7vta::::res://Player/PlatformerCamera.tscn<>res://event_trigger.tscn<>uid://0akonjc8ebem::::res://Assets/Interactables/interactables.tscn<>uid://b755igrpchp1b::::res://GameMechanics/4DirectionalLift/directional_lift.tscn
 template_scene.tscn::PackedScene::1487776563428677533::1696166339::0::1::::<><>::uid://cy1qhmipy7y0t::::res://Assets/Tiles/Brick1.png
 ::res://Scenes/World1/::1744212542
 test.gd::GDScript::-1::1743979332::0::1::::<>MeshInstance2D<>::
@@ -267,17 +278,15 @@ powerbox.tscn::PackedScene::7604950133276559694::1745376651::0::1::::<><>::res:/
 vending_machine.gd::GDScript::-1::1745376794::0::1::::<>StaticBody2D<>::
 vending_machine.tscn::PackedScene::6534163442804032243::1745377138::0::1::::<><>::res://Setpieces/VendingMachine/vending_machine.gd<>uid://bxv0w82qieq15::::res://Assets/Art/SnackShack.png<>uid://cagjdgjkhd6mx::::res://Assets/icon.svg<>uid://c3av0ae5wkxr8::::res://Assets/Fonts/dragon-warrior-iii.ttf
 vending_machine_ui.gd::GDScript::-1::1745223838::0::1::::<>CanvasLayer<>::
-::res://Shaders/::1745377248
-chest.gd::GDScript::-1::1745376793::0::1::::<>StaticBody2D<>::
-chest.tscn::PackedScene::1852752278394798616::1745372812::0::1::::<><>::uid://dgs6bk7ykdhry::::res://Assets/SpriteSheet/ChestSpriteSheet.png<>res://Shaders/chest.gd<>uid://8eeb0x7kjhqf::::res://interactions/interaction area/interaction_area.tscn<>res://Shaders/loot_dialogue.gd<>uid://c3av0ae5wkxr8::::res://Assets/Fonts/dragon-warrior-iii.ttf
-CRT.gdshader::Shader::-1::1745377248::0::1::::<><>::
-FireFlame.gdshader::Shader::-1::1745377248::0::1::::<><>::
-FireWork.gdshader::Shader::-1::1745377248::0::1::::<><>::
+::res://Shaders/::1745392337
+CRT.gdshader::Shader::-1::1745392658::0::1::::<><>::
+FireFlame.gdshader::Shader::-1::1745392658::0::1::::<><>::
+FireWork.gdshader::Shader::-1::1745392658::0::1::::<><>::
 loot_dialogue.gd::GDScript::-1::1745017524::0::1::::<>CanvasLayer<>::
-PipeTransShader.gdshader::Shader::-1::1745377248::0::1::::<><>::
-Rainbow (2).gdshader::Shader::-1::1745377248::0::1::::<><>::
-Rainbow.gdshader::Shader::-1::1745377248::0::1::::<><>::
-Stripes.gdshader::Shader::-1::1745377248::0::1::::<><>::
+PipeTransShader.gdshader::Shader::-1::1745392658::0::1::::<><>::
+Rainbow (2).gdshader::Shader::-1::1745392658::0::1::::<><>::
+Rainbow.gdshader::Shader::-1::1745392658::0::1::::<><>::
+Stripes.gdshader::Shader::-1::1745392658::0::1::::<><>::
 ::res://UI/::1745373769
 ::res://UI/input_settings/::1745372812
 input_button.tscn::PackedScene::2369488759894326918::1745372812::0::1::::<><>::uid://c3av0ae5wkxr8::::res://Assets/Fonts/dragon-warrior-iii.ttf

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://1nqtaudb0ijo"]
 
 [ext_resource type="Texture2D" uid="uid://dgs6bk7ykdhry" path="res://Assets/SpriteSheet/ChestSpriteSheet.png" id="1_06s4m"]
-[ext_resource type="Script" path="res://Shaders/chest.gd" id="1_qxfws"]
+[ext_resource type="Script" path="res://GameMechanics/Chests/chest.gd" id="1_qxfws"]
 [ext_resource type="PackedScene" uid="uid://8eeb0x7kjhqf" path="res://interactions/interaction area/interaction_area.tscn" id="2_p35t7"]
 [ext_resource type="Script" path="res://Shaders/loot_dialogue.gd" id="4_7wfk8"]
 [ext_resource type="FontFile" uid="uid://c3av0ae5wkxr8" path="res://Assets/Fonts/dragon-warrior-iii.ttf" id="4_rlpy2"]

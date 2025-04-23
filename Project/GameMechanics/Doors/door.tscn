@@ -15,6 +15,7 @@ size = Vector2(20, 31)
 
 [node name="Door" type="Node2D"]
 z_index = -2
+scale = Vector2(2, 2)
 script = ExtResource("1_ba8gm")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
