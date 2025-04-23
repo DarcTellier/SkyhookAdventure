@@ -27,7 +27,9 @@
 				"0b997293-c044-4408-8ae5-d794da8598e4",
 				"c110b449-9870-4452-9ff6-43dff9f1fe74",
 				"7e0fe21c-d64f-41d1-99cf-e7d210f7943d",
-				"8e48ff26-f1c9-4a2d-b69b-39a95082f41a"
+				"8e48ff26-f1c9-4a2d-b69b-39a95082f41a",
+				"c4d11d90-e375-40fc-ba0f-18ac46be40ad",
+				"5b6b8a1e-a85f-4a8f-b31a-3d4da249f993"
 			]
 		},
 		{
@@ -288,6 +290,20 @@
 			"uuid": "8e48ff26-f1c9-4a2d-b69b-39a95082f41a",
 			"title": "ctrl alt F4 : gives you an achievement in this game  on pc ",
 			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "c4d11d90-e375-40fc-ba0f-18ac46be40ad",
+			"title": "Spining room ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "5b6b8a1e-a85f-4a8f-b31a-3d4da249f993",
+			"title": "SURVEYOR SPRAY PAINT ON THE WALL:",
+			"description": "“SEA LEVEL”\n→ Arrow pointing at the floor\n🖌️ “Congratulations. You’re halfway there.”\n🖌️ “Now the real climb begins.”\n\n\nPeep:\n\n“W-we’re still underground?! B-but I packed a towel for the beach!”\n“I thought 0 meant FREEDOM!!”\n\nWant to include some fake graffiti from previous climbers like:\n\n“Sea level my butt.”\n“I saw the sky once… in a fever dream.”\n“-0m club. No t-shirts. Just trauma.”",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []
 		}

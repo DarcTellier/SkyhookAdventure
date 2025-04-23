@@ -1,3 +1,6 @@
+Camera2D
+TileMapLayer
+Node
 CollisionShape2D
 Label
 Area2D
@@ -10,5 +13,3 @@ StaticBody2D
 MeshInstance2D
 CanvasModulate
 DirectionalLight2D
-PointLight2D
-Camera2D

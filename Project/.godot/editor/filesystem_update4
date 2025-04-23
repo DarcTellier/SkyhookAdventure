@@ -33,3 +33,5 @@ res://Globals/QuitGame.gd
 res://Shaders/chest.gd
 res://locked_door.tscn
 res://locked_door.gd
+res://Levels/StartArea.tscn
+res://Levels/ZoneA/zone_a_1.tscn

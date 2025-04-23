@@ -20,7 +20,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_571cm"]
 size = Vector2(32, 406)
 
-[node name="Noraclave" type="Node2D"]
+[node name="StartArea" type="Node2D"]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(0.47451, 0.47451, 0.47451, 1)

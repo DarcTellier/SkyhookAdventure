@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://djhxj3ifaad17"]
 
-[ext_resource type="PackedScene" uid="uid://dcs588ewfa2pm" path="res://Levels/noraclave.tscn" id="1_pbelu"]
+[ext_resource type="PackedScene" uid="uid://dcs588ewfa2pm" path="res://Levels/StartArea.tscn" id="1_pbelu"]
 
 [node name="World" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [6423.0]
 
-[node name="Noraclave" parent="." instance=ExtResource("1_pbelu")]
+[node name="Noraclave2" parent="." instance=ExtResource("1_pbelu")]

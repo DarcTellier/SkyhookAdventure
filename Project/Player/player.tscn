@@ -267,6 +267,8 @@ script = ExtResource("2_fhl08")
 [node name="Ladder" type="Node" parent="."]
 script = ExtResource("3_vtle1")
 
+[node name="GrapplingHook" type="Node" parent="."]
+
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_mun31")
 
