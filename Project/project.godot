@@ -31,6 +31,7 @@ GPipeNetwork="*res://Globals/GPipeNetwork.gd"
 GDoorNetwork="*res://Globals/GDoorNetwork.gd"
 ConfigFileHandler="*res://Globals/ConfigFileHandler.gd"
 GPlayer="*res://Globals/GPlayer.gd"
+WebRadioStreamHelper="*res://addons/webradio/node_types/radiostreamhelper.gd"
 
 [display]
 
@@ -40,7 +41,7 @@ window/stretch/aspect="ignore"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg")
+enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg", "res://addons/webradio/plugin.cfg")
 
 [input]
 

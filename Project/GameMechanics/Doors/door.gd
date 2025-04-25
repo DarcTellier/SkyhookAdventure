@@ -36,7 +36,8 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 func _process(delta: float) -> void:
 	if player_reff != null:
 		if Input.is_action_just_pressed("up") && locked == false:
-			#player_reff.get_node("Camera2D").position_smoothing_enabled = false
+			player_reff.get_node("Camera2D").position_smoothing_enabled = false
 			player_reff.global_position = GDoorNetwork.door_directory[destination]
+			
 		
 		

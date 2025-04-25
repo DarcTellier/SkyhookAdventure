@@ -29,7 +29,8 @@
 				"7e0fe21c-d64f-41d1-99cf-e7d210f7943d",
 				"c4d11d90-e375-40fc-ba0f-18ac46be40ad",
 				"5b6b8a1e-a85f-4a8f-b31a-3d4da249f993",
-				"9318f267-c4b6-4d5a-a13a-26acf8164b03"
+				"9318f267-c4b6-4d5a-a13a-26acf8164b03",
+				"3b1d7153-0717-47a7-9ee4-772129a8ee21"
 			]
 		},
 		{
@@ -335,6 +336,13 @@
 		{
 			"uuid": "45d21b18-9c40-4fe7-9de1-874d786acc3f",
 			"title": "one way wall ",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "3b1d7153-0717-47a7-9ee4-772129a8ee21",
+			"title": "Notes platforms can go through walls but you cant",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []

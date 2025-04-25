@@ -259,11 +259,12 @@ floor_stop_on_slope = false
 floor_max_angle = 0.532325
 script = ExtResource("1_a2mvl")
 SPEED = 200.0
-cayote_Time = 0
+cayote_Time = 20
 metadata/_edit_horizontal_guides_ = [16.0, 48.0]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -120.5)
+enabled = false
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 

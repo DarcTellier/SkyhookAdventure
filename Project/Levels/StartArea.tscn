@@ -1,7 +1,6 @@
-[gd_scene load_steps=16 format=4 uid="uid://dcs588ewfa2pm"]
+[gd_scene load_steps=15 format=4 uid="uid://dcs588ewfa2pm"]
 
 [ext_resource type="TileSet" uid="uid://cgo58ai75qrp2" path="res://Levels/Template/Blocking.tres" id="1_d7x1w"]
-[ext_resource type="PackedScene" uid="uid://crj0lw3pyxu1h" path="res://Player/player.tscn" id="2_f4lm6"]
 [ext_resource type="PackedScene" uid="uid://b8saykbb2iney" path="res://GameMechanics/Ladders/ladder.tscn" id="3_4ik4x"]
 [ext_resource type="Texture2D" uid="uid://csq35e8hvervq" path="res://Assets/Art/Ladder2.png" id="4_4ik4x"]
 [ext_resource type="Texture2D" uid="uid://ctwruo6y2l5nj" path="res://Assets/LightMask/light2dmask.png" id="5_8os2j"]
@@ -9,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c0dgyne1w1lkd" path="res://Setpieces/VendingMachine/vending_machine.tscn" id="7_571cm"]
 [ext_resource type="PackedScene" uid="uid://b2vl27mkf0wnr" path="res://GameMechanics/Props/PicknicTable.tscn" id="8_gjtee"]
 [ext_resource type="PackedScene" uid="uid://1nqtaudb0ijo" path="res://GameMechanics/Chests/chest.tscn" id="9_4y3mn"]
-[ext_resource type="PackedScene" uid="uid://bdpb0byg62j6a" path="res://GameMechanics/Doors/door.tscn" id="10_ml2vk"]
+[ext_resource type="PackedScene" uid="uid://rdhlk37f7a5u" path="res://CameraTools/turn_on_follow_camera.tscn" id="11_7tyip"]
 [ext_resource type="Script" path="res://UI/UIDisplay/displayBox.gd" id="11_kpm7p"]
 [ext_resource type="PackedScene" uid="uid://bv8p007xrba71" path="res://UI/UIDisplay/ui_display.tscn" id="11_shml4"]
 
@@ -39,12 +38,6 @@ color = Color(1, 0.56626, 0.0942052, 1)
 energy = 2.13
 texture = ExtResource("5_8os2j")
 texture_scale = 0.32
-
-[node name="Player" parent="." instance=ExtResource("2_f4lm6")]
-position = Vector2(-128, 102)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(608, 464)
 
 [node name="Powerbox" parent="." instance=ExtResource("6_4uq51")]
 position = Vector2(192, 80)
@@ -95,21 +88,12 @@ position = Vector2(800, 383)
 add_to_inventory = true
 loot_text = "1X 🗝"
 
-[node name="Door" parent="." instance=ExtResource("10_ml2vk")]
-position = Vector2(608, 558)
-door_name = "D1"
-destination = "D2"
-locked = true
-
-[node name="Door2" parent="." instance=ExtResource("10_ml2vk")]
-position = Vector2(608, -418)
-door_name = "D2"
-destination = "D1"
-
 [node name="Display" type="CanvasLayer" parent="."]
 visible = false
 script = ExtResource("11_kpm7p")
 
 [node name="UIDisplay" parent="Display" instance=ExtResource("11_shml4")]
+
+[node name="TurnOnFollowCamera" parent="." instance=ExtResource("11_7tyip")]
 
 [editable path="Ladder"]
