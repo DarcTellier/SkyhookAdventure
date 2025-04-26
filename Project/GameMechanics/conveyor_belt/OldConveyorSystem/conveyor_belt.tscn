@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dopskpw7d4vj0"]
 
-[ext_resource type="PackedScene" uid="uid://dk582mkuhn1qd" path="res://GameMechanics/conveyor_belt/conveyor.tscn" id="1_xxm1p"]
+[ext_resource type="PackedScene" uid="uid://dk582mkuhn1qd" path="res://GameMechanics/conveyor_belt/OldConveyorSystem/conveyor.tscn" id="1_xxm1p"]
 
 [node name="ConveyorBelt" type="Node2D"]
 position = Vector2(48, 612)

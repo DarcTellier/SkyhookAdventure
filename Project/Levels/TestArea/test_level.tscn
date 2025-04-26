@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bssllwhv8q114" path="res://GameMechanics/OrbitingPlatform/orbiting_platform.tscn" id="2_i4ak4"]
 [ext_resource type="PackedScene" uid="uid://5bunr2xo7vta" path="res://Player/PlatformerCamera.tscn" id="3_06yct"]
 [ext_resource type="PackedScene" uid="uid://lbkaoij5gdtj" path="res://GameMechanics/OrbitingPlatform/platform.tscn" id="3_3158n"]
-[ext_resource type="PackedScene" uid="uid://dopskpw7d4vj0" path="res://GameMechanics/conveyor_belt/conveyor_belt.tscn" id="4_4t6x8"]
+[ext_resource type="PackedScene" uid="uid://dopskpw7d4vj0" path="res://GameMechanics/conveyor_belt/OldConveyorSystem/conveyor_belt.tscn" id="4_4t6x8"]
 [ext_resource type="PackedScene" uid="uid://dq4sm4bqr0xp1" path="res://GameMechanics/Elevator_Skip/elevator_skip.tscn" id="8_7e6fp"]
 [ext_resource type="PackedScene" uid="uid://d0bhty3pmlimf" path="res://GameMechanics/Elevator_Skip/elevatorPlatform.tscn" id="9_cn5b1"]
 [ext_resource type="PackedScene" uid="uid://dwuaep5q40l2r" path="res://GameMechanics/Platform/platform_one_way_collision.tscn" id="10_tc6tp"]

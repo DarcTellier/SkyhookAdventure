@@ -43,7 +43,6 @@ texture_scale = 0.32
 position = Vector2(192, 80)
 
 [node name="LightsOut" type="MeshInstance2D" parent="."]
-visible = false
 modulate = Color(0, 0, 0, 1)
 position = Vector2(416, 176)
 scale = Vector2(2240, 1120)
@@ -84,6 +83,7 @@ texture = ExtResource("4_4ik4x")
 position = Vector2(367, 479)
 
 [node name="Chest" parent="." instance=ExtResource("9_4y3mn")]
+z_index = -1
 position = Vector2(800, 383)
 add_to_inventory = true
 loot_text = "1X 🗝"

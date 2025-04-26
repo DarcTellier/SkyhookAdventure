@@ -11,6 +11,9 @@
 			"uuid": "3c73aebb-6b77-4faf-9bfa-e4bfe5d4e4d2",
 			"title": "Todo",
 			"tasks": [
+				"1624cb51-12dc-49b2-9331-db4070a5de11",
+				"f6b54d09-9164-4115-a965-c83312595aed",
+				"ae415a72-6a78-4776-bd4a-bf94266f67b7",
 				"db99e767-30b3-46ce-b2df-00e2f303e5e2",
 				"a849b3b1-5076-408f-82ee-d310be981166",
 				"c4151983-efe3-4271-9fa4-5cb5cc1a2fa1",
@@ -37,9 +40,8 @@
 			"uuid": "d86f7127-6204-4d78-9636-e131877fdc38",
 			"title": "Doing",
 			"tasks": [
-				"ae415a72-6a78-4776-bd4a-bf94266f67b7",
-				"f6b54d09-9164-4115-a965-c83312595aed",
-				"1624cb51-12dc-49b2-9331-db4070a5de11"
+				"a587d3ca-8a58-4381-968d-e328561bfb3e",
+				"be7a356a-4aec-41b8-947d-f5952a6727fc"
 			]
 		},
 		{
@@ -343,6 +345,20 @@
 		{
 			"uuid": "3b1d7153-0717-47a7-9ee4-772129a8ee21",
 			"title": "Notes platforms can go through walls but you cant",
+			"description": "",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "be7a356a-4aec-41b8-947d-f5952a6727fc",
+			"title": "platforms sliding in out of walls",
+			"description": "from tiny toon nes \n",
+			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
+			"steps": []
+		},
+		{
+			"uuid": "a587d3ca-8a58-4381-968d-e328561bfb3e",
+			"title": "down to crouch",
 			"description": "",
 			"category": "290e3a3c-bacd-472b-9d74-31c0641eacda",
 			"steps": []

@@ -1,4 +1,4 @@
-res://Levels/Template/Blocking.tres
+res://Levels/ZoneA/zone_a_1.tscn
 res://Shaders/PipeTransShader.gdshader
 res://Shaders/CRT.gdshader
 res://Shaders/FireFlame.gdshader
@@ -6,15 +6,7 @@ res://Shaders/FireWork.gdshader
 res://Shaders/Stripes.gdshader
 res://Shaders/Rainbow.gdshader
 res://Shaders/Rainbow (2).gdshader
-res://Levels/ZoneA/zone_a_1.tscn
+res://Levels/Template/Blocking.tres
 res://Levels/world.tscn
 res://Levels/StartArea.tscn
-res://Player/player.tscn
-res://GameMechanics/Doors/door.gd
-res://GameMechanics/Chests/chest.tscn
-res://Levels/Template/static_camera.gd
-res://Levels/Template/test.tscn
-res://GameMechanics/Doors/door.tscn
 res://CameraTools/turn_on_follow_camera.gd
-res://CameraTools/turn_on_follow_camera.tscn
-res://Globals/Pause_Screen.tscn

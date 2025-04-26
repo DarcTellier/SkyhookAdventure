@@ -13,95 +13,19 @@ metadata/_edit_horizontal_guides_ = [6423.0]
 [node name="ZoneA-1" parent="." instance=ExtResource("2_kycxd")]
 position = Vector2(2814, -273)
 
-[node name="ElevatorPlatform" parent="ZoneA-1/Screen2/Setpieces/Elevator2" index="1"]
-position = Vector2(0, -195)
-
-[node name="ElevatorPlatform2" parent="ZoneA-1/Screen2/Setpieces/Elevator2" index="2"]
-position = Vector2(0, -283)
-
-[node name="ElevatorPlatform3" parent="ZoneA-1/Screen2/Setpieces/Elevator2" index="3"]
-position = Vector2(0, -18)
-
-[node name="ElevatorPlatform4" parent="ZoneA-1/Screen2/Setpieces/Elevator2" index="4"]
-position = Vector2(0, -106)
-
-[node name="MovingPlatform" parent="ZoneA-1/Screen3/Setpieces/MovingPlatforms" index="0"]
-direction = true
-
-[node name="MovingPlatform2" parent="ZoneA-1/Screen3/Setpieces/MovingPlatforms" index="1"]
-direction = true
-
-[node name="PathFollow2D" parent="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform" index="0"]
-position = Vector2(-112, -347.307)
-progress = 491.306
-
-[node name="Line2D" parent="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform" index="1"]
-points = PackedVector2Array(-112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144)
-
-[node name="PathFollow2D" parent="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform2" index="0"]
-position = Vector2(16, 11.3065)
-progress = 1243.31
-
-[node name="Line2D" parent="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform2" index="1"]
-points = PackedVector2Array(-112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144)
-
-[node name="PathFollow2D" parent="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform3" index="0"]
-position = Vector2(16, -364.697)
-progress = 867.305
-
-[node name="Line2D" parent="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform3" index="1"]
-points = PackedVector2Array(-112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144)
-
-[node name="PathFollow2D" parent="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform4" index="0"]
-position = Vector2(-112, 28.6981)
-progress = 115.305
-
-[node name="Line2D" parent="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform4" index="1"]
-points = PackedVector2Array(-112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144, -112, 144, -112, -480, 16, -480, 16, 144, -112, 144)
-
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(-128, 100)
 
 [node name="Player" parent="." instance=ExtResource("1_pa6j6")]
-position = Vector2(3172, 333)
+position = Vector2(6670, 277)
 
 [node name="Door" parent="." instance=ExtResource("4_4dvsh")]
 position = Vector2(608, 560)
 door_name = "A"
 destination = "B"
+locked = true
 
 [node name="Door2" parent="." instance=ExtResource("4_4dvsh")]
 position = Vector2(3244, 322)
 door_name = "B"
 destination = "A"
-
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/Coin" to="Noraclave2/TileMapLayer/Coin" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164360" to="Noraclave2/TileMapLayer/@Area2D@164360" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164361" to="Noraclave2/TileMapLayer/@Area2D@164361" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164362" to="Noraclave2/TileMapLayer/@Area2D@164362" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164363" to="Noraclave2/TileMapLayer/@Area2D@164363" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164364" to="Noraclave2/TileMapLayer/@Area2D@164364" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164365" to="Noraclave2/TileMapLayer/@Area2D@164365" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164366" to="Noraclave2/TileMapLayer/@Area2D@164366" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164367" to="Noraclave2/TileMapLayer/@Area2D@164367" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164368" to="Noraclave2/TileMapLayer/@Area2D@164368" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164369" to="Noraclave2/TileMapLayer/@Area2D@164369" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164370" to="Noraclave2/TileMapLayer/@Area2D@164370" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164371" to="Noraclave2/TileMapLayer/@Area2D@164371" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164372" to="Noraclave2/TileMapLayer/@Area2D@164372" method="_on_body_entered"]
-[connection signal="body_entered" from="Noraclave2/TileMapLayer/@Area2D@164373" to="Noraclave2/TileMapLayer/@Area2D@164373" method="_on_body_entered"]
-
-[editable path="Noraclave2"]
-[editable path="Noraclave2/Ladder"]
-[editable path="ZoneA-1"]
-[editable path="ZoneA-1/Screen1"]
-[editable path="ZoneA-1/Screen2"]
-[editable path="ZoneA-1/Screen2/Setpieces/Elevator2"]
-[editable path="ZoneA-1/Screen3"]
-[editable path="ZoneA-1/Screen4"]
-[editable path="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform"]
-[editable path="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform2"]
-[editable path="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform3"]
-[editable path="ZoneA-1/Screen4/Setpieces/MovingPlatforms/MovingPlatform4"]
-[editable path="ZoneA-1/Screen5"]
-[editable path="ZoneA-1/Screen6"]

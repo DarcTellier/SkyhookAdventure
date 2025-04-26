@@ -1,12 +1,14 @@
-[gd_scene load_steps=22 format=3 uid="uid://crj0lw3pyxu1h"]
+[gd_scene load_steps=24 format=3 uid="uid://crj0lw3pyxu1h"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_a2mvl"]
 [ext_resource type="Script" path="res://Player/movement.gd" id="2_fhl08"]
 [ext_resource type="Texture2D" uid="uid://b2fx23cihh3g7" path="res://Player/JUMPER.png" id="2_mun31"]
+[ext_resource type="Script" path="res://Player/crouch.gd" id="3_00tjw"]
 [ext_resource type="AudioStream" uid="uid://qg13ioj71ekm" path="res://Assets/SoundFX/Jump70.wav" id="3_awb2x"]
 [ext_resource type="Script" path="res://Player/ladder.gd" id="3_vtle1"]
 [ext_resource type="PackedScene" uid="uid://f5narbiaxcmv" path="res://UI/input_settings/input_settings.tscn" id="4_gwnis"]
 [ext_resource type="Shader" path="res://Shaders/PipeTransShader.gdshader" id="5_k53q1"]
+[ext_resource type="Texture2D" uid="uid://djwbb7vc1nyny" path="res://Player/JUMPER_Crouch .png" id="6_x3vf3"]
 [ext_resource type="Texture2D" uid="uid://ctwruo6y2l5nj" path="res://Assets/LightMask/light2dmask.png" id="8_od3ui"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufdn7"]
@@ -271,6 +273,9 @@ position_smoothing_enabled = true
 [node name="Movement" type="Node" parent="."]
 script = ExtResource("2_fhl08")
 
+[node name="Crouch" type="Node" parent="."]
+script = ExtResource("3_00tjw")
+
 [node name="Ladder" type="Node" parent="."]
 script = ExtResource("3_vtle1")
 
@@ -279,7 +284,11 @@ script = ExtResource("3_vtle1")
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_mun31")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="SpriteCrouch" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("6_x3vf3")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 3.5)
 shape = SubResource("RectangleShape2D_ufdn7")
 
