@@ -1,3 +1,4 @@
+res://GameMechanics/OneWayWall
 res://GameMechanics/Elevator_Skip
 res://GameMechanics/Ladders
 res://CameraTools
@@ -5,7 +6,6 @@ res://GameMechanics/Moving_Path_Platform/MovingPlatformBackup
 res://Radio
 res://Levels/Template
 res://Levels/TestArea
-res://GameMechanics/OneWayWall
 res://GameMechanics/Platform
 res://Levels/ZoneA
 res://Levels

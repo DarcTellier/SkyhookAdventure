@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=30 format=3 uid="uid://cgo58ai75qrp2"]
+[gd_resource type="TileSet" load_steps=35 format=3 uid="uid://cgo58ai75qrp2"]
 
 [ext_resource type="Texture2D" uid="uid://ck281pk8dgdvi" path="res://Assets/Art/Block1.png" id="1_opx2a"]
 [ext_resource type="Texture2D" uid="uid://wbg3j0053f3l" path="res://Assets/Tiles/Ramp1.png" id="2_iio4m"]
@@ -9,9 +9,13 @@
 [ext_resource type="PackedScene" uid="uid://b8saykbb2iney" path="res://GameMechanics/Ladders/ladder.tscn" id="7_lhhk0"]
 [ext_resource type="Texture2D" uid="uid://cx5onk7aqr26w" path="res://Assets/Art/bush.png" id="8_mi4in"]
 [ext_resource type="PackedScene" uid="uid://bisyktg0qg8c5" path="res://GameMechanics/Platform/platform_solid.tscn" id="9_md7ql"]
+[ext_resource type="PackedScene" uid="uid://bh524v7pbaowh" path="res://GameMechanics/FakeBlocks/FakeOneWayWalls/FAKE_Down_one_way_wall.tscn" id="9_tasvr"]
 [ext_resource type="PackedScene" uid="uid://dwuaep5q40l2r" path="res://GameMechanics/Platform/platform_one_way_collision.tscn" id="10_2cijm"]
+[ext_resource type="PackedScene" uid="uid://dh60sjtbogfim" path="res://GameMechanics/FakeBlocks/FakeOneWayWalls/FAKE_Left_one_way_wall.tscn" id="10_lhhk0"]
+[ext_resource type="PackedScene" uid="uid://bh1n78ledenuq" path="res://GameMechanics/FakeBlocks/FakeOneWayWalls/FAKE_Right_one_way_wall.tscn" id="11_mi4in"]
 [ext_resource type="PackedScene" uid="uid://qk401y4swsdx" path="res://GameMechanics/Platform/Platform_two_way_collision.tscn" id="11_xsgt8"]
 [ext_resource type="PackedScene" uid="uid://bqffhxe1fqkyd" path="res://GameMechanics/Ladders/ladder_for_Tilemap.tscn" id="12_iio4m"]
+[ext_resource type="PackedScene" uid="uid://bbk4ypxxbt50j" path="res://GameMechanics/FakeBlocks/FakeOneWayWalls/FAKE_Up_one_way_wall.tscn" id="12_md7ql"]
 [ext_resource type="PackedScene" uid="uid://dwv3sfc7xmf0v" path="res://GameMechanics/OneWayWall/Up_one_way_wall.tscn" id="12_x1vot"]
 [ext_resource type="PackedScene" uid="uid://umd1e5m481pp" path="res://GameMechanics/OneWayWall/Down_one_way_wall.tscn" id="13_qhvic"]
 [ext_resource type="PackedScene" uid="uid://dx7nkxtasjry3" path="res://GameMechanics/OneWayWall/Left_one_way_wall.tscn" id="14_fs4vm"]
@@ -58,6 +62,13 @@ scenes/3/scene = ExtResource("7_lhhk0")
 texture = ExtResource("8_mi4in")
 0:0/0 = 0
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_2cijm"]
+resource_name = "FakeBlocks"
+scenes/1/scene = ExtResource("9_tasvr")
+scenes/2/scene = ExtResource("10_lhhk0")
+scenes/3/scene = ExtResource("11_mi4in")
+scenes/4/scene = ExtResource("12_md7ql")
+
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_jrui4"]
 resource_name = "Platforms"
 scenes/1/scene = ExtResource("9_md7ql")
@@ -88,6 +99,7 @@ sources/2 = SubResource("TileSetAtlasSource_k7ebw")
 sources/7 = SubResource("TileSetScenesCollectionSource_jrui4")
 sources/8 = SubResource("TileSetScenesCollectionSource_chf35")
 sources/9 = SubResource("TileSetScenesCollectionSource_sa0rh")
+sources/6 = SubResource("TileSetScenesCollectionSource_2cijm")
 pattern_0 = SubResource("TileMapPattern_3158n")
 pattern_1 = SubResource("TileMapPattern_ub4j8")
 pattern_2 = SubResource("TileMapPattern_opx2a")

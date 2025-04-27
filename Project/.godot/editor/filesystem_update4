@@ -10,3 +10,8 @@ res://Levels/Template/Blocking.tres
 res://Levels/world.tscn
 res://Levels/StartArea.tscn
 res://CameraTools/turn_on_follow_camera.gd
+res://GameMechanics/OneWayWall/FAKE_Down_one_way_wall.tscn
+res://GameMechanics/OneWayWall/FAKE_Left_one_way_wall.tscn
+res://GameMechanics/OneWayWall/FAKE_Right_one_way_wall.tscn
+res://GameMechanics/OneWayWall/FAKE_Up_one_way_wall.tscn
+res://GameMechanics/conveyor_belt/conveyor_test.tscn
